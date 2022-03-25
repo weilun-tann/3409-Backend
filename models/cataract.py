@@ -10,6 +10,15 @@ TODO - ADD THE ARGUMENTS YOU NEED FOR YOUR MODEL, LEAVING TYPES AS STRING
 3. Backend will simply send it back as JSON
 """
 def predict(age: str, gender: str) -> PredictCataractResponseSchema:
+    """_summary_
+
+    Args:
+        age (str): _description_
+        gender (str): _description_
+
+    Returns:
+        PredictCataractResponseSchema: _description_
+    """
     # casting
     # load model
     # model.predict

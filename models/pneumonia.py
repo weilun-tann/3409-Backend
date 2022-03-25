@@ -10,6 +10,14 @@ TODO - ADD THE ARGUMENTS YOU NEED FOR YOUR MODEL, LEAVING TYPES AS STRING
 3. Backend will simply send it back as JSON
 """
 def predict(absolute_image_path: str) -> PredictPneumoniaResponseSchema:
+    """_summary_
+
+    Args:
+        absolute_image_path (str): _description_
+
+    Returns:
+        PredictPneumoniaResponseSchema: _description_
+    """
     # casting
     # load model
     # model.predict

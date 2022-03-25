@@ -45,3 +45,16 @@ pip install -r requirements.txt
 ```
 FLASK_APP=app.py FLASK_ENV=development flask run
 ```
+
+# DEVELOPMENT - BACKEND - ADDING DEPENDENCIES
+
+ONLY if you're on venv with ONLY libraries in requirements.txt installed
+```
+pip install XXX
+pip freeze > requirements.txt
+```
+
+OTHERWISE
+```
+Manually add the library and its version into requirements.txt
+```
