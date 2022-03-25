@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("..") 
+sys.path.append("..")
 from schema import PredictPneumoniaResponseSchema
 
 """
@@ -9,6 +9,8 @@ TODO - ADD THE ARGUMENTS YOU NEED FOR YOUR MODEL, LEAVING TYPES AS STRING
 2. The return value should be a dictionary, do NOT change the return type
 3. Backend will simply send it back as JSON
 """
+
+
 def predict(absolute_image_path: str) -> PredictPneumoniaResponseSchema:
     """_summary_
 
@@ -27,8 +29,5 @@ def predict(absolute_image_path: str) -> PredictPneumoniaResponseSchema:
     # TODO - `res` should exactly match whatever schema you use for .dump(res) below
     # TODO - Ensure the key NAMES are identical to PredictCataractResponseSchema
     # TODO - Ensure the value TYPES are identical to PredictCataractResponseSchema
-    res: PredictPneumoniaResponseSchema = {
-        "probability": 0.5,
-        "outcome": 1
-    }
+    res: PredictPneumoniaResponseSchema = {"probability": 0.5, "outcome": 1}
     return res
