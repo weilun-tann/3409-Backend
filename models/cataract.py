@@ -1,6 +1,6 @@
 import sys
 
-sys.path.append("..") 
+sys.path.append("..")
 from schema import PredictCataractResponseSchema
 
 """
@@ -9,6 +9,8 @@ TODO - ADD THE ARGUMENTS YOU NEED FOR YOUR MODEL, LEAVING TYPES AS STRING
 2. The return value should be a dictionary, do NOT change the return type
 3. Backend will simply send it back as JSON
 """
+
+
 def predict(age: str, gender: str) -> PredictCataractResponseSchema:
     """_summary_
 
