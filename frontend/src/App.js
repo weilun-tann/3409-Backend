@@ -1,24 +1,28 @@
 import './App.css';
-import logo from './logo.svg';
+import './SelectionPage'
+import SelectionPage from "./SelectionPage";
+import DiabetesPage from "./DiabetesPage";
+import logo from "./logo.svg";
+import {BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and add changes to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        {console.log('started')}
+        <div className="App-logo">
+            <img src={logo} className="logo" alt="logo"/>
+        </div>
+        <div className='App'>
+            <Routes>
+                <Route exact path="/" element={<SelectionPage/>} />
+                <Route path="/diabetes" element={<DiabetesPage/>} />
+                <Route path="/topics" element={<DiabetesPage/>} />
+            </Routes>
+
+            {/*</Router>*/}
+        </div>
+    </Router>
   );
 }
 
