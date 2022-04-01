@@ -8,17 +8,18 @@ function DiabetesPage() {
     const onSubmit = (values) =>{
         console.log(values);
         for (var key in values) {
-            if (values[key]===undefined){
+            if (values[key]===undefined || values[key]===''){
                 console.log(key);
                 showError(true);
                 showError(false); // this is to reinitialize to false
                 return;
             }
         }
+        reset();
+        return;
 
 
         // values will be passed to Flask concurrently, not here
-
 
     }
 

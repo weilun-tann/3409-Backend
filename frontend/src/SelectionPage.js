@@ -1,17 +1,18 @@
 import React, {useState} from 'react'
-import {FormInputDropdown, FormNumberInput, ErrorMessage, Submit} from './Components'
-import {useForm} from "react-hook-form";
-import {Link} from "react-router-dom";
+import {SelectSurvey} from './Components'
+import stroke from "./stroke.png";
+import coronary from "./coronary.png";
+import diabetes from "./diabetes.png";
 
 function SelectionPage() {
-
-
     return (
-        <div>
-            <ul>
-                <li> <Link to="/diabetes">About</Link> </li>
-                <li> <Link to="/topics">Topics</Link> </li>
-            </ul>
+        <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent:'space-between', alignContent:'space-between', height:'45vh', width:'55vh'}}>
+            <SelectSurvey name="Diabetes" imgLink={diabetes} pathLink={'/diabetes'}/>
+            <SelectSurvey name="Coronary Artery Disease" imgLink={coronary} pathLink={'/coronary'}/>
+            <SelectSurvey name="Coronary Artery Disease" imgLink={stroke} pathLink={'/diabetes'}/>
+            <SelectSurvey name="Coronary Artery Disease" imgLink={stroke} pathLink={'/diabetes'}/>
+            <SelectSurvey name="Coronary Artery Disease" imgLink={stroke} pathLink={'/diabetes'}/>
+            <SelectSurvey name="Coronary Artery Disease" imgLink={stroke} pathLink={'/diabetes'}/>
         </div>
 
 
