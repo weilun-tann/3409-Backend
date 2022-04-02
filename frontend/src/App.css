@@ -3,10 +3,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 85vh;
+  height: 75vh;
   display: flex;
-  overflow: hidden;
-  margin: 5vh;
+  overflow: scroll;
+  padding: 2vh 8vh 0vh;
 }
 
 .App-logo {
@@ -14,7 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 15vh;
+  height: 15vh;
   display: flex;
   position: sticky;
   top:0;

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import PropTypes from 'prop-types';
-import {Backdrop, Box, Button, MenuItem, Select, TextField, Typography} from "@material-ui/core";
+import {Backdrop, Box, Button, MenuItem, Select, Slider, TextField, Typography} from "@material-ui/core";
 import { Uploader } from 'rsuite';
 import {Controller} from "react-hook-form";
 import Modal from '@mui/material/Modal';
@@ -13,9 +13,9 @@ export const SelectSurvey =({name, imgLink, pathLink}) => {
     const [bgColour, setBgColour] = useState("#f2f2f2")
     const [txtColour, setTxtColour] = useState("#f2f2f2")
     return(
-        <div onClick={()=>navigate(pathLink)} style={{cursor:'pointer', width: '17vh',backgroundColor:bgColour, borderRadius: '10px', paddingTop:'10px', paddingBottom:'10px', }} onMouseEnter={() =>{setBgColour("#81a9e5"); setTxtColour("#f7f7fd")} } onMouseLeave={() => {setBgColour("#f2f2f2"); setTxtColour("#f2f2f2")}}>
+        <div onClick={()=>navigate(pathLink)} style={{cursor:'pointer', width: '17vh',backgroundColor:bgColour, borderRadius: '10px', paddingTop:'10px', paddingBottom:'10px', boxShadow: '2px 3px 2px lightgrey' }} onMouseEnter={() =>{setBgColour("#81a9e5"); setTxtColour("#f7f7fd")} } onMouseLeave={() => {setBgColour("#f2f2f2"); setTxtColour("#f2f2f2")}}>
             <img src={imgLink} onClick={()=>navigate(pathLink)} style={{width:'15vh', height:'15vh', borderRadius: '10px',backgroundColor:txtColour, }}/>
-            <div style={{ marginLeft:'4px', marginRight:'4px', height:'4vh', flexWrap:'wrap', justifyContent:'center'}} >
+            <div style={{ marginLeft:'4px', marginRight:'4px', height:'4vh', display:'flex', flexDirection:'row', alignItems:'center', justifyContent:'center'}} >
                 <text style={{width:'15vh'}}>{name}</text>
             </div>
 
@@ -39,18 +39,11 @@ export const ImageUploader =({name, control, register}) => {
         name={name}
         control={control}
         defaultValue={null}
-        // onChange={(image)=> {
-        //     setImage(image.target.files[0]);
-        //     console.log('>>>')
-        //     console.log(selectedImage)}}
         render={({ field: { onChange, value } }) => (
-            <div style={{border:'2px grey dashed', borderRadius:'10px', width:'45vw', display:'flex', flexDirection:'column', padding:'5px'}}>
-                <input type='file' onChange={(image)=> {
-                    setImage(image.target.files[0]);
-                    console.log('>>>')
-                    console.log(selectedImage)}} />
-                <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'45vw'}} />
-                {/*<Select onChange={onChange} value={value} style={{width:'0px', height:'0px'}}/>*/}
+            <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', padding:'10px',justifyContent:'center', alignItems:'center'}}>
+                <input type='file' value={selectedImage} onChange={onChange}
+                       accept=".png,.jpg,.jpeg" />
+                <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'30vw'}} />
             </div>
         )}
         {...register(name)}
@@ -75,7 +68,7 @@ export const FormInputDropdown= ({name, question, options, control, register}) =
         defaultValue={null}
         render={({ field: { onChange, value } }) => (
             <div style={{width:'30vw', flexDirection: 'column', display:'flex' }}>
-                <a style={{width:'30vw', marginBottom:'10px', marginTop:'20px', textAlign:'left'}}>{question}</a>
+                <a style={{width:'30vw', marginBottom:'12px', marginTop:'20px', textAlign:'left'}}>{question}</a>
                 <Select onChange={onChange} value={value} style={{marginBottom:'10px'}}>
                     {generateSelectOptions()}
                 </Select>
@@ -93,8 +86,31 @@ export const FormNumberInput = ({name, question, control, register}) => {
         defaultValue={''}
         render={({ field: { onChange, value } }) => (
             <div style={{width:'30vw', flexDirection: 'column', display:'flex'}}>
-                <a style={{width:'30vw', marginBottom:'10px', marginTop:'20px', textAlign:'left'}}>{question}</a>
-                <TextField onChange={onChange} value={value} id="number-input" label="Value" type="number" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} style={{marginBottom:'10px'}}/>
+                <a style={{width:'30vw', marginBottom:'12px', marginTop:'20px', textAlign:'left'}}>{question}</a>
+                <TextField onChange={onChange} value={value} id="number-input" label="Value" type="text" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} style={{marginBottom:'10px'}}/>
+            </div>
+        )}
+        {...register(name)}
+    />
+};
+
+// Numeric Input
+export const ScaleSliderInput = ({name, question, control, range, register}) => {
+    return <Controller
+        name={name}
+        control={control}
+        defaultValue={''}
+        render={({ field: { onChange, value } }) => (
+            <div style={{width:'30vw', flexDirection: 'column', display:'flex'}}>
+                <a style={{width:'30vw', marginBottom:'12px', marginTop:'20px', textAlign:'left'}}>{question}</a>
+                <Slider
+                    aria-label="Always visible"
+                    defaultValue={1}
+                    step={1}
+                    min = {1}
+                    max={range}
+                    valueLabelDisplay="on"
+                    style={{marginBottom:'10px', width:'25vw', alignSelf:'center', marginTop:'35px'}}/>
             </div>
         )}
         {...register(name)}
@@ -104,7 +120,7 @@ export const FormNumberInput = ({name, question, control, register}) => {
 // Submit and Reset Button
 export const Submit = (reset) => {
     return (
-        <div style={{width:'30vw', display: 'flex', justifyContent:'space-between', margin:'10px 0px'}}>
+        <div style={{width:'inherit', display: 'flex', justifyContent:'space-between', margin:'10px 0px', padding:'3px 0px'}}>
             <Button onClick={()=>console.log('Submit')} variant={"contained"} type="submit">
                 {" "}Submit{" "}
             </Button>

@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bb2242e-095c-427e-b70e-109d19ce59e0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/frontend/src/PneumoniaPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/StrokePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/Components.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/Components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/CoronaryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/CoronaryPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/DiabetesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/DiabetesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/SelectionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/SelectionPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648476945372</updated>
-      <workItem from="1648476947611" duration="65238000" />
+      <workItem from="1648476947611" duration="76591000" />
     </task>
     <servers />
   </component>

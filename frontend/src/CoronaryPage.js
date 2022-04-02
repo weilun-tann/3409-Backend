@@ -44,9 +44,14 @@ function DiabetesPage() {
         { label: "Normal", value: "3", },
     ];
 
+    const options_ExerciseInducedAngina = [
+        { label: "Yes", value: "1", },
+        { label: "No", value: "2", },
+    ];
+
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="CoronaryPage">
+            <div className="CoronaryPage" >
                 <FormNumberInput name={'Age'} control={control} question="What is the patient's age?" register={register}/>
                 <FormInputDropdown name={'Gender'} control={control} question="What is the patient's gender?" options={options_Gender} register={register}/>
                 <FormInputDropdown name={'ChestPainType'} control={control} question="What kind of chest pain does patient suffer from, if any?" options={options_ChestPainType} register={register}/>
@@ -55,7 +60,7 @@ function DiabetesPage() {
                 <FormInputDropdown name={'FastingBloodSugar'} control={control} question="What is the level of fasting blood sugar level of patient (mg/dl)?" options={options_FastingBloodSugar} register={register}/>
                 <FormInputDropdown name={'RestingECG'} control={control} question="What is the pattern of patient's resting ECG?" options={options_RestingECG} register={register}/>
                 <FormNumberInput name={'MaxHR'} control={control} question="What is the patient's maximum heart rate (bps)?" register={register}/>
-                <FormInputDropdown name={'ExerciseInducedAngina'} control={control} question="Does patient suffer from exercise induced angina?" options={options_RestingECG} register={register}/>
+                <FormInputDropdown name={'ExerciseInducedAngina'} control={control} question="Does patient suffer from exercise induced angina?" options={options_ExerciseInducedAngina} register={register}/>
                 <Submit reset={reset}/>
                 <ErrorMessage error={error}/>
             </div>
