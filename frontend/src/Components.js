@@ -38,19 +38,18 @@ export const ImageUploader =({name, control, register}) => {
     return <Controller
         name={name}
         control={control}
-        value={selectedImage}
         defaultValue={null}
-        render={({ field: { onChange } }) => (
+        // onChange={(image)=> {
+        //     setImage(image.target.files[0]);
+        //     console.log('>>>')
+        //     console.log(selectedImage)}}
+        render={({ field: { onChange, value } }) => (
             <div style={{border:'2px grey dashed', borderRadius:'10px', width:'45vw', display:'flex', flexDirection:'column', padding:'5px'}}>
                 <input type='file' onChange={(image)=> {
                     setImage(image.target.files[0]);
-
                     console.log('>>>')
-                    // console.log(value)
-                }}/>
-                {/*<input type='file' onChange={onChange} value={(image)=>setImage(image.target.files[0])}/>*/}
-                {/*{console.log(value)}*/}
-                <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'45vw'}} onChange={onChange}/>
+                    console.log(selectedImage)}} />
+                <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'45vw'}} />
                 {/*<Select onChange={onChange} value={value} style={{width:'0px', height:'0px'}}/>*/}
             </div>
         )}
