@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
-import {FormInputDropdown, FormNumberInput, ErrorMessage, Submit} from './Components'
+import {FormInputDropdown, FormNumberInput, ErrorMessage, Submit, ImageUploader} from './Components'
 import {useForm} from "react-hook-form";
 
-function DiabetesPage() {
+function CataractsPage() {
     const { register, handleSubmit, control, getValues, reset } = useForm();
     const [error, showError] = useState(false);
     const onSubmit = (values) =>{
+        console.log('------>')
         console.log(values);
+        console.log('<------')
         for (var key in values) {
             if (values[key]===undefined || values[key]===''){
                 console.log(key);
@@ -23,25 +25,13 @@ function DiabetesPage() {
 
     }
 
-    const options_1 = [
-        { label: "Yes", value: "1", },
-        { label: "No", value: "2", },
-    ];
-
-    const options_2 = [
-        { label: "Yes", value: "1", },
-        { label: "No", value: "2", },
-    ];
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="DiabetesPage">
-
-                <FormInputDropdown name={'test_1'} control={control} question='Did the patient suffer from ... previously?' options={options_1} register={register}/>
-                <FormNumberInput name={'test_2'} control={control} question='Did the patient also suffer from ... previously?' register={register}/>
+            <div className="CataractsPage">
+                <ImageUploader name='cataracts' control={control} register={register}/>
                 <Submit reset={reset}/>
                 <ErrorMessage error={error}/>
-
             </div>
         </form>
 
@@ -50,4 +40,4 @@ function DiabetesPage() {
 
 }
 
-export default DiabetesPage;
+export default CataractsPage;

@@ -1,23 +1,61 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import PropTypes from 'prop-types';
 import {Backdrop, Box, Button, MenuItem, Select, TextField, Typography} from "@material-ui/core";
+import { Uploader } from 'rsuite';
 import {Controller} from "react-hook-form";
 import Modal from '@mui/material/Modal';
 import { useSpring, animated } from 'react-spring';
-import logo from "./logo.svg";
 import {useNavigate} from "react-router-dom";
 
+// selection icons for survey
 export const SelectSurvey =({name, imgLink, pathLink}) => {
     let navigate = useNavigate();
+    const [bgColour, setBgColour] = useState("#f2f2f2")
+    const [txtColour, setTxtColour] = useState("#f2f2f2")
     return(
-        <div onClick={()=>navigate(pathLink)} style={{cursor:'pointer', width: '15vh',backgroundColor:'whitesmoke', borderRadius: '10px', paddingTop:'10px'}}>
-            <img src={imgLink} onClick={()=>navigate(pathLink)} style={{width:'15vh', height:'15vh'}}/>
-            <div style={{marginBottom:'10px'}}>
-                <text style={{width:'10vh', flex:1 }}>{name}</text>
+        <div onClick={()=>navigate(pathLink)} style={{cursor:'pointer', width: '17vh',backgroundColor:bgColour, borderRadius: '10px', paddingTop:'10px', paddingBottom:'10px', }} onMouseEnter={() =>{setBgColour("#81a9e5"); setTxtColour("#f7f7fd")} } onMouseLeave={() => {setBgColour("#f2f2f2"); setTxtColour("#f2f2f2")}}>
+            <img src={imgLink} onClick={()=>navigate(pathLink)} style={{width:'15vh', height:'15vh', borderRadius: '10px',backgroundColor:txtColour, }}/>
+            <div style={{ marginLeft:'4px', marginRight:'4px', height:'4vh', flexWrap:'wrap', justifyContent:'center'}} >
+                <text style={{width:'15vh'}}>{name}</text>
             </div>
 
         </div>
         )
+}
+
+// Uploader
+export const ImageUploader =({name, control, register}) => {
+    const [selectedImage, setImage] = useState(null);
+
+    const getImgURL = (img) => {
+        if (img) {
+            return URL.createObjectURL(selectedImage)
+        } else {
+            return ''
+        }
+    };
+
+    return <Controller
+        name={name}
+        control={control}
+        value={selectedImage}
+        defaultValue={null}
+        render={({ field: { onChange } }) => (
+            <div style={{border:'2px grey dashed', borderRadius:'10px', width:'45vw', display:'flex', flexDirection:'column', padding:'5px'}}>
+                <input type='file' onChange={(image)=> {
+                    setImage(image.target.files[0]);
+
+                    console.log('>>>')
+                    // console.log(value)
+                }}/>
+                {/*<input type='file' onChange={onChange} value={(image)=>setImage(image.target.files[0])}/>*/}
+                {/*{console.log(value)}*/}
+                <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'45vw'}} onChange={onChange}/>
+                {/*<Select onChange={onChange} value={value} style={{width:'0px', height:'0px'}}/>*/}
+            </div>
+        )}
+        {...register(name)}
+    />
 }
 
 // Form Dropdown Input
@@ -133,17 +171,7 @@ export const ErrorMessage = (error) =>  {
                 BackdropProps={{
                     timeout: 500,
                 }}
-                style={{position: 'absolute',
-                    left: '0',
-                    right: '0',
-                    marginLeft: 'auto',
-                    marginRight: 'auto',
-                    top: '15vh',
-                    bottom: '0',
-                    marginTop: 'auto',
-                    marginBottom: 'auto',
-                    height: '50vh',
-                    width: '50vw',
+                style={{
                 }}
             >
                 <Fade in={open} >
@@ -151,12 +179,24 @@ export const ErrorMessage = (error) =>  {
                         padding: '25px',
                         backgroundColor: '#eeeeee',
                         width: "45vw",
+                        height: "10vh",
                         border: '2px solid #000',
                         boxShadow: "24",
                         p: "4",
-                        borderRadius: "15px"
+                        borderRadius: "10px",
+                        position: 'absolute',
+                        left: '0',
+                        right: '0',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        top: '45vh',
+                        bottom: '45vh',
+                        marginTop: 'auto',
+                        marginBottom: 'auto',
+                        textAlign: "center", alignItems:'center', justifyContent:'center',
+                        display:'flex'
                     }}>
-                        <Typography id="spring-modal-title" variant="h6" component="h2" style={{textAlign: "center", flexDirection:'overflow'}}>
+                        <Typography id="spring-modal-title" variant="h6" component="h2" >
                             Kindly fill up all required fields before proceeding
                         </Typography>
                     </Box>

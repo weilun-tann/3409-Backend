@@ -2,9 +2,10 @@ import './App.css';
 import './SelectionPage'
 import SelectionPage from "./SelectionPage";
 import DiabetesPage from "./DiabetesPage";
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import {BrowserRouter as Router, Route, Link, Routes, useNavigate} from "react-router-dom";
 import CoronaryPage from "./CoronaryPage";
+import CataractsPage from "./CataractsPage"
 
 function App() {
     let navigate = useNavigate();
@@ -19,6 +20,8 @@ function App() {
                     <Route exact path="/" element={<SelectionPage/>} />
                     <Route path="/diabetes" element={<DiabetesPage/>} />
                     <Route path="/coronary" element={<CoronaryPage/>} />
+                    <Route path="/cataracts" element={<CataractsPage/>} />
+                    <Route path="/imageUploader"  />
                 </Routes>
 
                 {/*</Router>*/}

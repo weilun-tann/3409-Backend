@@ -9,10 +9,10 @@ function SelectionPage() {
         <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent:'space-between', alignContent:'space-between', height:'45vh', width:'55vh'}}>
             <SelectSurvey name="Diabetes" imgLink={diabetes} pathLink={'/diabetes'}/>
             <SelectSurvey name="Coronary Artery Disease" imgLink={coronary} pathLink={'/coronary'}/>
-            <SelectSurvey name="Coronary Artery Disease" imgLink={stroke} pathLink={'/diabetes'}/>
-            <SelectSurvey name="Coronary Artery Disease" imgLink={stroke} pathLink={'/diabetes'}/>
-            <SelectSurvey name="Coronary Artery Disease" imgLink={stroke} pathLink={'/diabetes'}/>
-            <SelectSurvey name="Coronary Artery Disease" imgLink={stroke} pathLink={'/diabetes'}/>
+            <SelectSurvey name="Stroke" imgLink={stroke} pathLink={'/diabetes'}/>
+            <SelectSurvey name="Cataracts" imgLink={stroke} pathLink={'/cataracts'}/>
+            <SelectSurvey name="Artery" imgLink={stroke} pathLink={'/diabetes'}/>
+            <SelectSurvey name="Disease" imgLink={stroke} pathLink={'/diabetes'}/>
         </div>
 
 

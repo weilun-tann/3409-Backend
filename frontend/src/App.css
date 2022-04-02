@@ -6,6 +6,7 @@
   min-height: 85vh;
   display: flex;
   overflow: hidden;
+  margin: 5vh;
 }
 
 .App-logo {
@@ -26,6 +27,7 @@
   padding-bottom: 0px;
   pointer-events: bounding-box;
   cursor: pointer;
+  z-index: 999;
 }
 
 .logo {
