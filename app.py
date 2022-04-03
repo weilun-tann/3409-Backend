@@ -14,8 +14,10 @@ from flask import (
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
-from models import cataract, pneumonia
-from schema import PredictCataractResponseSchema, PredictPneumoniaResponseSchema
+from models import cataract, pneumonia, respiratory
+from schema import (PredictCataractResponseSchema,
+                    PredictPneumoniaResponseSchema,
+                    PredictRespiratoryResponseSchema)
 
 app = Flask(__name__, template_folder="swagger/templates")
 CORS(app)
@@ -56,16 +58,11 @@ def predict_cataract():
     """
     ---
     get:
-        summary: Predict cataract based on numerical/categorical variables
+        summary: Predict cataract based on an image of the patient's eye uploaded
         parameters:
-        - name: age
+        - name: absolute_image_path
           in: query
-          description: The patient's age
-          schema:
-            type: integer
-        - name: gender
-          in: query
-          description: The patient's gender
+          description: The image of the eye
           schema:
             type: string
         responses:
@@ -75,12 +72,40 @@ def predict_cataract():
                         schema: PredictCataractResponseSchema
 
     """
-    age = request.args.get("age")
-    gender = request.args.get("gender")
-    res = cataract.predict(age, gender)
+    absolute_image_path = request.args.get("image")
+    res = cataract.predict(absolute_image_path)
 
     # TODO - If an empty response is returned, `res` and your schema have probably diverged
     return PredictCataractResponseSchema().dump(res)
+
+# GET endpoint with URL parameters
+@app.route("/predict/respiratory")
+def predict_respiratory():
+    # TODO - fill in your docstrings (make sure name and data type are correct)
+    # Syntax follows OpenAPI3 (aka Swagger)
+    # https://support.smartbear.com/swaggerhub/docs/tutorials/openapi-3-tutorial.html
+    """
+    ---
+    get:
+        summary: Predict respiratory disease based on audio file of patient uploaded
+        parameters:
+        - name: absolute_audio_path
+          in: query
+          description: The audio file
+          schema:
+            type: string
+        responses:
+            200:
+                content:
+                    application/json:
+                        schema: PredictRespiratoryResponseSchema
+
+    """
+    absolute_audio_path = request.args.get("audio")
+    res = respiratory.predict(absolute_audio_path)
+
+    # TODO - If an empty response is returned, `res` and your schema have probably diverged
+    return PredictRespiratoryResponseSchema().dump(res)
 
 
 # GET endpoint with URL parameters
