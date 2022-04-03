@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {FormInputDropdown, FormNumberInput, ErrorMessage, Submit, ImageUploader} from './Components'
+import {ErrorMessage, Submit, ImageUploader} from './Components'
 import {useForm} from "react-hook-form";
 
 function CataractsPage() {
@@ -18,6 +18,7 @@ function CataractsPage() {
             }
         }
         reset();
+        console.log(values)
         return;
 
 

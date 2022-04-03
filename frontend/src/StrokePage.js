@@ -16,6 +16,7 @@ function StrokePage() {
             }
         }
         reset();
+        console.log(values)
         return;
 
 

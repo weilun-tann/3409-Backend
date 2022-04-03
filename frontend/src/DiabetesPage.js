@@ -23,54 +23,54 @@ function DiabetesPage() {
 
     }
     const options_Sex = [
-        { label: "Male", value: "1", },
-        { label: "Female", value: "2", },
+        { label: "Male", value: "Male", },
+        { label: "Female", value: "Female", },
     ];
 
     const options_Hypertension = [
-        { label: "Present", value: "1", },
-        { label: "Absent", value: "2", },
+        { label: "Present", value: "Present", },
+        { label: "Absent", value: "Absent", },
     ];
 
     const options_HighCholesterol = [
-        { label: "High", value: "1", },
-        { label: "Normal", value: "2", },
+        { label: "High", value: "High", },
+        { label: "Normal", value: "Normal", },
     ];
 
     const options_Smoking = [
-        { label: "Smokes", value: "1", },
-        { label: "Formerly smoked", value: "1", },
-        { label: "Never smoked", value: "2", },
+        { label: "Smokes", value: "Previously/Existing", },
+        { label: "Formerly smoked", value: "Previously/Existing", },
+        { label: "Never smoked", value: "Never", },
     ];
 
     const options_Stroke = [
-        { label: "Previously", value: "1", },
-        { label: "Never", value: "2", },
+        { label: "Previously", value: "Previously", },
+        { label: "Never", value: "Never", },
     ];
 
     const options_CoronaryArteryDisease = [
-        { label: "Yes", value: "1", },
-        { label: "No", value: "2", },
+        { label: "Yes", value: "Present", },
+        { label: "No", value: "Absent", },
     ];
 
     const options_Lifestyle = [
-        { label: "Active", value: "1", },
-        { label: "Normal", value: "2", },
+        { label: "Active", value: "Active", },
+        { label: "Normal", value: "Normal", },
     ];
 
     const options_FruitsConsumption = [
-        { label: "Active", value: "1", },
-        { label: "Normal", value: "2", },
+        { label: "Frequent", value: "Frequent", },
+        { label: "Infrequent", value: "Infrequent", },
     ];
 
     const options_VegetableConsumption = [
-        { label: "Active", value: "1", },
-        { label: "Normal", value: "2", },
+        { label: "Frequent", value: "Frequent", },
+        { label: "Infrequent", value: "Infrequent", },
     ];
 
     const options_AlcoholConsumption = [
-        { label: "Active", value: "1", },
-        { label: "Normal", value: "2", },
+        { label: "Frequent", value: "Frequent", },
+        { label: "Infrequent", value: "Infrequent", },
     ];
 
     return (

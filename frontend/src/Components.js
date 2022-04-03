@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react";
 import PropTypes from 'prop-types';
 import {Backdrop, Box, Button, MenuItem, Select, Slider, TextField, Typography} from "@material-ui/core";
-import { Uploader } from 'rsuite';
+import ReactAudioPlayer from 'react-audio-player';
 import {Controller} from "react-hook-form";
 import Modal from '@mui/material/Modal';
 import { useSpring, animated } from 'react-spring';
@@ -23,7 +23,7 @@ export const SelectSurvey =({name, imgLink, pathLink}) => {
         )
 }
 
-// Uploader
+// Image Uploader
 export const ImageUploader =({name, control, register}) => {
     const [selectedImage, setImage] = useState(null);
 
@@ -41,9 +41,58 @@ export const ImageUploader =({name, control, register}) => {
         defaultValue={null}
         render={({ field: { onChange, value } }) => (
             <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', padding:'10px',justifyContent:'center', alignItems:'center'}}>
-                <input type='file' value={selectedImage} onChange={onChange}
+                <input type='file' onChange={(image)=> {
+                    onChange(image.target.files[0]);
+                    setImage(image.target.files[0]);
+                    value = image.target.files[0];
+                }}
                        accept=".png,.jpg,.jpeg" />
                 <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'30vw'}} />
+            </div>
+        )}
+        {...register(name)}
+    />
+}
+
+// Audio Uploader
+export const AudioUploader =({name, control, register}) => {
+    const [selectedAudio, setAudio] = useState(null);
+
+    const getAudioURL = (img) => {
+        if (img) {
+            return URL.createObjectURL(selectedAudio)
+        } else {
+            return ''
+        }
+    };
+
+    return <Controller
+        name={name}
+        control={control}
+        defaultValue={null}
+        render={({ field: { onChange, value } }) => (
+            <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', padding:'10px',justifyContent:'center', alignItems:'center'}}>
+                <input type='file' onChange={(audio)=> {
+                    console.log(audio.target.files[0])
+                    if (audio.target.files[0].size<200000) {
+                        alert('File should be longer than 5 seconds, please upload another file.')
+                        return
+                    } else if (audio.target.files[0].size>1500000) {
+                        alert('File should not be longer than 30 seconds, please upload another file.')
+                        return
+                    } else {
+                        onChange(audio.target.files[0]);
+                        setAudio(audio.target.files[0]);
+                        value = audio.target.files[0];
+                    }
+                }}
+                       accept=".wav" />
+                <ReactAudioPlayer
+                    src={ getAudioURL(selectedAudio) }
+                    autoPlay ={false}
+                    controls
+                    style={{maxHeight:'45vh', maxWidth:'30vw', marginTop:'5px'}}
+                />
             </div>
         )}
         {...register(name)}
@@ -99,7 +148,7 @@ export const ScaleSliderInput = ({name, question, control, range, register}) => 
     return <Controller
         name={name}
         control={control}
-        defaultValue={''}
+        defaultValue={undefined}
         render={({ field: { onChange, value } }) => (
             <div style={{width:'30vw', flexDirection: 'column', display:'flex'}}>
                 <a style={{width:'30vw', marginBottom:'12px', marginTop:'20px', textAlign:'left'}}>{question}</a>
@@ -109,6 +158,8 @@ export const ScaleSliderInput = ({name, question, control, range, register}) => 
                     step={1}
                     min = {1}
                     max={range}
+                    onChange={onChange}
+                    value={value}
                     valueLabelDisplay="on"
                     style={{marginBottom:'10px', width:'25vw', alignSelf:'center', marginTop:'35px'}}/>
             </div>
@@ -168,7 +219,6 @@ export const ErrorMessage = (error) =>  {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     useEffect(()=> {
-        console.log(error)
         if (error.error){
             handleOpen()
         }

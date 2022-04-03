@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {FormInputDropdown, FormNumberInput, ErrorMessage, Submit, ImageUploader} from './Components'
+import {ErrorMessage, Submit, AudioUploader} from './Components'
 import {useForm} from "react-hook-form";
 
 function PneumoniaPage() {
@@ -23,20 +23,10 @@ function PneumoniaPage() {
 
     }
 
-    const options_1 = [
-        { label: "Yes", value: "1", },
-        { label: "No", value: "2", },
-    ];
-
-    const options_2 = [
-        { label: "Yes", value: "1", },
-        { label: "No", value: "2", },
-    ];
-
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="PneumoniaPage">
-                <ImageUploader name='cataracts' control={control} register={register}/>
+                <AudioUploader name='pneumonia' control={control} register={register}/>
                 <Submit reset={reset}/>
                 <ErrorMessage error={error}/>
 

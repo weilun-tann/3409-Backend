@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0bb2242e-095c-427e-b70e-109d19ce59e0" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/frontend/src/PneumoniaPage.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/src/StrokePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -11,6 +12,24 @@
       <change beforePath="$PROJECT_DIR$/frontend/src/CoronaryPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/CoronaryPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/DiabetesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/DiabetesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/SelectionPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/SelectionPage.js" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/swagger/static/favicon-16x16.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/favicon-32x32.png:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/index.html:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/oauth2-redirect.html:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui-bundle.js.map:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui-bundle.js:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui-es-bundle-core.js.map:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui-es-bundle-core.js:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui-es-bundle.js.map:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui-es-bundle.js:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui-standalone-preset.js.map:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui-standalone-preset.js:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui.css.map:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui.css:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui.js.map:Zone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/swagger/static/swagger-ui.js:Zone.Identifier" beforeDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,5 +96,9 @@
         </entry>
       </map>
     </option>
+<<<<<<< Updated upstream
+=======
+    <option name="oldMeFiltersMigrated" value="true" />
+>>>>>>> Stashed changes
   </component>
 </project>
