@@ -3,14 +3,19 @@ import os
 from apispec import APISpec
 from apispec.ext.marshmallow import MarshmallowPlugin
 from apispec_webframeworks.flask import FlaskPlugin
-from flask import (Flask, jsonify, redirect, render_template, request,
-                   send_from_directory)
+from flask import (
+    Flask,
+    jsonify,
+    redirect,
+    render_template,
+    request,
+    send_from_directory,
+)
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
 from models import cataract, pneumonia
-from schema import (PredictCataractResponseSchema,
-                    PredictPneumoniaResponseSchema)
+from schema import PredictCataractResponseSchema, PredictPneumoniaResponseSchema
 
 app = Flask(__name__, template_folder="swagger/templates")
 CORS(app)
@@ -23,12 +28,14 @@ spec = APISpec(
     plugins=[FlaskPlugin(), MarshmallowPlugin()],
 )
 
+
 @app.before_request
 def before_request():
     if request.is_secure:
-        url = request.url.replace('https://', 'http://', 1)
+        url = request.url.replace("https://", "http://", 1)
         code = 301
         return redirect(url, code=code)
+
 
 @app.route("/")
 def root():
