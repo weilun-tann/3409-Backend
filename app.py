@@ -15,9 +15,11 @@ from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
 from models import cataract, pneumonia, respiratory
-from schema import (PredictCataractResponseSchema,
-                    PredictPneumoniaResponseSchema,
-                    PredictRespiratoryResponseSchema)
+from schema import (
+    PredictCataractResponseSchema,
+    PredictPneumoniaResponseSchema,
+    PredictRespiratoryResponseSchema,
+)
 
 app = Flask(__name__, template_folder="swagger/templates")
 CORS(app)
@@ -77,6 +79,7 @@ def predict_cataract():
 
     # TODO - If an empty response is returned, `res` and your schema have probably diverged
     return PredictCataractResponseSchema().dump(res)
+
 
 # GET endpoint with URL parameters
 @app.route("/predict/respiratory")
