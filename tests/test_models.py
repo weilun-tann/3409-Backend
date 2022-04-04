@@ -1,5 +1,5 @@
 import pytest
-from models import coronary, diabetes, pneumonia, stroke
+from models import coronary, diabetes, pneumonia, stroke, cataract, respiratory
 
 
 def test_predict_coronary():
@@ -110,4 +110,49 @@ def test_predict_pneumonia():
     """
     actual = pneumonia.predict("uploads/sample.png")
     expected = {"probability": 0.5, "outcome": 1}
+    assert actual == expected
+
+#test for cataract
+def test_predict_cataract():
+    """
+    TODO - change your `actual` and `expected` accordingly
+    """
+    actual = cataract.predict("uploads/24_right.jpg")
+    expected = {"outcome": "Cataract"}
+    assert actual == expected
+
+#test for no cataract
+def test_predict_cataract():
+    """
+    TODO - change your `actual` and `expected` accordingly
+    """
+    actual = cataract.predict("uploads/8_right.jpg")
+    expected = {"outcome": "Normal"}
+    assert actual == expected
+
+#test for Chronic Obstructive Pulmonary Disease
+def test_predict_respiratory():
+    """
+    TODO - change your `actual` and `expected` accordingly
+    """
+    actual = respiratory.predict("uploads/162_1b2_Al_mc_AKGC417L.wav")
+    expected = {"outcome":  "Chronic Obstructive Pulmonary Disease"}
+    assert actual == expected
+
+#test for Healthy
+def test_predict_respiratory():
+    """
+    TODO - change your `actual` and `expected` accordingly
+    """
+    actual = respiratory.predict("uploads/225_1b1_Pl_sc_Meditron.wav")
+    expected = {"outcome":  "Healthy"}
+    assert actual == expected
+
+#test for Respiratory Tract Infection
+def test_predict_respiratory():
+    """
+    TODO - change your `actual` and `expected` accordingly
+    """
+    actual = respiratory.predict("uploads/101_1b1_Al_sc_Meditron")
+    expected = {"outcome":  "Respiratory Tract Infection"}
     assert actual == expected
