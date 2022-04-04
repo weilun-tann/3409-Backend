@@ -29,9 +29,9 @@ function CataractsPage() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="CataractsPage">
+            <div className="CataractsPage" style={{height:'75vh'}}>
                 <ImageUploader name='cataracts' control={control} register={register}/>
-                <Submit reset={reset}/>
+                <Submit/>
                 <ErrorMessage error={error}/>
             </div>
         </form>

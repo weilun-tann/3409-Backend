@@ -1,14 +1,12 @@
 import React, {useState} from 'react'
-import {ErrorMessage, Submit, ImageUploader} from './Components'
+import {ErrorMessage, Submit, AudioUploader} from './Components'
 import {useForm} from "react-hook-form";
 
-function PneumoniaPage() {
+function RespiratoryPage() {
     const { register, handleSubmit, control, getValues, reset } = useForm();
     const [error, showError] = useState(false);
     const onSubmit = (values) =>{
-        console.log('------>')
         console.log(values);
-        console.log('<------')
         for (var key in values) {
             if (values[key]===undefined || values[key]===''){
                 console.log(key);
@@ -18,7 +16,6 @@ function PneumoniaPage() {
             }
         }
         reset();
-        console.log(values)
         return;
 
 
@@ -28,10 +25,11 @@ function PneumoniaPage() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="PneumoniaPage" style={{height:'75vh'}}>
-                <ImageUploader name='pneumonia' control={control} register={register}/>
+            <div className="RespiratoryPage" style={{height:'75vh'}}>
+                <AudioUploader name='respiratory' control={control} register={register}/>
                 <Submit/>
                 <ErrorMessage error={error}/>
+
             </div>
         </form>
 
@@ -40,4 +38,4 @@ function PneumoniaPage() {
 
 }
 
-export default PneumoniaPage;
+export default RespiratoryPage;

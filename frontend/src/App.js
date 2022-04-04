@@ -8,12 +8,12 @@ import CoronaryPage from "./CoronaryPage";
 import CataractsPage from "./CataractsPage"
 import PneumoniaPage from "./PneumoniaPage";
 import StrokePage from "./StrokePage";
+import ResultsPage from "./ResultsPage";
 
 function App() {
     let navigate = useNavigate();
     return (
         <div>
-            {console.log('started')}
             <div className="App-logo" >
                 <img src={logo} className="logo" alt="logo" onClick={()=>navigate('/')}/>
             </div>
@@ -25,7 +25,8 @@ function App() {
                     <Route path="/coronary" element={<CoronaryPage/>} />
                     <Route path="/cataracts" element={<CataractsPage/>} />
                     <Route path="/pneumonia" element={<PneumoniaPage/>} />
-                    <Route path="/imageUploader"  />
+                    <Route path="/results" element={<ResultsPage/>} />
+                    {/*<Route path="/imageUploader"  />*/}
                 </Routes>
 
                 {/*</Router>*/}

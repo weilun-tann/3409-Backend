@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
-import {FormInputDropdown, FormNumberInput, ErrorMessage, Submit} from './Components'
+import {FormInputDropdown, FormNumberInput, ErrorMessage, SubmitAndReset} from './Components'
 import {useForm} from "react-hook-form";
+import {useNavigate} from "react-router-dom";
 
 function StrokePage() {
     const { register, handleSubmit, control, getValues, reset } = useForm();
     const [error, showError] = useState(false);
+    let navigate = useNavigate();
     const onSubmit = (values) =>{
-        console.log(values);
+        console.log(values)
         for (var key in values) {
             if (values[key]===undefined || values[key]===''){
                 console.log(key);
@@ -15,47 +17,52 @@ function StrokePage() {
                 return;
             }
         }
-        reset();
-        console.log(values)
-        return;
-
-
-        // values will be passed to Flask concurrently, not here
-
+        fetch(
+            'https://ai-doctor-3409.herokuapp.com/predict/stroke?' + new URLSearchParams(values),
+            { method: 'GET', }
+        )
+            .then((response)=> response.json())
+            .then((result) => {
+                console.log('Success:', result.outcome);
+                // navigate('/');
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     }
 
     const options_Gender = [
-        { label: "Male", value: "1", },
-        { label: "Female", value: "2", },
+        { label: "Male", value: "Male", },
+        { label: "Female", value: "Female", },
     ];
 
     const options_Hypertension = [
-        { label: "Present", value: "1", },
-        { label: "Absent", value: "2", },
+        { label: "Present", value: "Present", },
+        { label: "Absent", value: "Absent", },
     ];
 
     const options_CoronaryArteryDisease = [
-        { label: "Present", value: "1", },
-        { label: "Absent", value: "2", },
+        { label: "Present", value: "Present", },
+        { label: "Absent", value: "Absent", },
     ];
 
     const options_Smoking = [
-        { label: "Smokes", value: "1", },
-        { label: "Formerly smoked", value: "2", },
-        { label: "Never smoked", value: "3", },
+        { label: "Smokes", value: "smokes", },
+        { label: "Formerly smoked", value: "formerly smoked", },
+        { label: "Never smoked", value: "never smoked", },
     ];
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="StrokePage">
-                <FormInputDropdown name={'Gender'} control={control} question="What is the patient's gender?" options={options_Gender} register={register}/>
-                <FormNumberInput name={'Age'} control={control} question="What is the patient's age?" register={register}/>
-                <FormInputDropdown name={'Hypertension'} control={control} question="Does patient have a history of hypertension?" options={options_Hypertension} register={register}/>
-                <FormInputDropdown name={'CoronaryArteryDisease'} control={control} question="Does patient have a history of coronary artery disease?" options={options_CoronaryArteryDisease} register={register}/>
-                <FormNumberInput name={'GlucoseLevel'} control={control} question="What is the patient's average glucose level (mg/dL)?" register={register}/>
-                <FormNumberInput name={'BMI'} control={control} question="What is the patient's BMI level?" register={register}/>
-                <FormInputDropdown name={'SmokingStatus'} control={control} question="Is patient a smoker or has ever smoked before?" options={options_Smoking} register={register}/>
-                <Submit reset={reset}/>
+            <div className="StrokePage" style={{height:'75vh'}}>
+                <FormInputDropdown name={'gender'} control={control} question="What is the patient's gender?" options={options_Gender} register={register}/>
+                <FormNumberInput name={'age'} control={control} question="What is the patient's age?" register={register}/>
+                <FormInputDropdown name={'hypertension'} control={control} question="Does patient have a history of hypertension?" options={options_Hypertension} register={register}/>
+                <FormInputDropdown name={'corornary_artery_disease'} control={control} question="Does patient have a history of coronary artery disease?" options={options_CoronaryArteryDisease} register={register}/>
+                <FormNumberInput name={'glucose_level'} control={control} question="What is the patient's average glucose level (mg/dL)?" register={register}/>
+                <FormNumberInput name={'bmi'} control={control} question="What is the patient's BMI level?" register={register}/>
+                <FormInputDropdown name={'smoking_status'} control={control} question="Is patient a smoker or has ever smoked before?" options={options_Smoking} register={register}/>
+                <SubmitAndReset reset={reset}/>
                 <ErrorMessage error={error}/>
             </div>
         </form>

@@ -1,11 +1,13 @@
 import React, {useEffect, useState} from "react";
 import PropTypes from 'prop-types';
 import {Backdrop, Box, Button, MenuItem, Select, Slider, TextField, Typography} from "@material-ui/core";
+import LoadingButton from '@mui/lab/LoadingButton';
 import ReactAudioPlayer from 'react-audio-player';
 import {Controller} from "react-hook-form";
 import Modal from '@mui/material/Modal';
 import { useSpring, animated } from 'react-spring';
 import {useNavigate} from "react-router-dom";
+import loading from './loading.svg'
 
 // selection icons for survey
 export const SelectSurvey =({name, imgLink, pathLink}) => {
@@ -41,13 +43,18 @@ export const ImageUploader =({name, control, register}) => {
         defaultValue={null}
         render={({ field: { onChange, value } }) => (
             <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', padding:'10px',justifyContent:'center', alignItems:'center'}}>
-                <input type='file' onChange={(image)=> {
+                <Button
+                    onClick={()=>document.getElementById(name).click()}
+                    variant="outlined"
+                > Click to upload </Button>
+                <input type='file' id={name} style={{display:'None'}} onChange={(image)=> {
                     onChange(image.target.files[0]);
                     setImage(image.target.files[0]);
                     value = image.target.files[0];
                 }}
                        accept=".png,.jpg,.jpeg" />
                 <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'30vw'}} />
+                <text style={{fontStyle:'italic', fontSize:'80%', marginTop:'5px', marginBottom:'5px'}}>*only .png, .jpg, .jpeg files are accepted</text>
             </div>
         )}
         {...register(name)}
@@ -72,9 +79,16 @@ export const AudioUploader =({name, control, register}) => {
         defaultValue={null}
         render={({ field: { onChange, value } }) => (
             <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', padding:'10px',justifyContent:'center', alignItems:'center'}}>
-                <input type='file' onChange={(audio)=> {
-                    console.log(audio.target.files[0])
-                    if (audio.target.files[0].size<200000) {
+                <Button
+                    onClick={()=>document.getElementById(name).click()}
+                    variant="outlined"
+                > Click to upload </Button>
+                <input type='file' id={name} style={{display:'None'}} onChange={(audio)=> {
+                    if (!audio.target.files[0]) {
+                        onChange(audio.target.files[0]);
+                        setAudio(audio.target.files[0]);
+                        value = audio.target.files[0];
+                    } else if (audio.target.files[0].size<200000) {
                         alert('File should be longer than 5 seconds, please upload another file.')
                         return
                     } else if (audio.target.files[0].size>1500000) {
@@ -93,6 +107,7 @@ export const AudioUploader =({name, control, register}) => {
                     controls
                     style={{maxHeight:'45vh', maxWidth:'30vw', marginTop:'5px'}}
                 />
+                <text style={{fontStyle:'italic', fontSize:'80%', marginTop:'5px', marginBottom:'5px'}}>*only .wav files are accepted</text>
             </div>
         )}
         {...register(name)}
@@ -148,20 +163,28 @@ export const ScaleSliderInput = ({name, question, control, range, register}) => 
     return <Controller
         name={name}
         control={control}
-        defaultValue={undefined}
+        defaultValue={'Unselected'}
         render={({ field: { onChange, value } }) => (
             <div style={{width:'30vw', flexDirection: 'column', display:'flex'}}>
                 <a style={{width:'30vw', marginBottom:'12px', marginTop:'20px', textAlign:'left'}}>{question}</a>
                 <Slider
                     aria-label="Always visible"
-                    defaultValue={1}
+                    axis={'x'}
+                    defaultValue={'Unselected'}
+                    valueLabelFormat={(x)=>{
+                        if (Number.isInteger(x)){
+                            return x
+                        } else {
+                            return 1
+                        }
+                    }}
                     step={1}
                     min = {1}
                     max={range}
-                    onChange={onChange}
-                    value={value}
-                    valueLabelDisplay="on"
+                    onChange={(x,y)=> onChange(y)}
+                    valueLabelDisplay="auto"
                     style={{marginBottom:'10px', width:'25vw', alignSelf:'center', marginTop:'35px'}}/>
+                <text>{value}</text>
             </div>
         )}
         {...register(name)}
@@ -169,7 +192,7 @@ export const ScaleSliderInput = ({name, question, control, range, register}) => 
 };
 
 // Submit and Reset Button
-export const Submit = (reset) => {
+export const SubmitAndReset = (reset) => {
     return (
         <div style={{width:'inherit', display: 'flex', justifyContent:'space-between', margin:'10px 0px', padding:'3px 0px'}}>
             <Button onClick={()=>console.log('Submit')} variant={"contained"} type="submit">
@@ -177,6 +200,16 @@ export const Submit = (reset) => {
             </Button>
             <Button onClick={()=>reset.reset()} variant={"outlined"}>
                 {" "}Reset{" "}
+            </Button>
+        </div>
+    );
+};
+
+export const Submit = () => {
+    return (
+        <div style={{width:'inherit', display: 'flex', justifyContent:'center', margin:'10px 0px', padding:'3px 0px'}}>
+            <Button onClick={()=>console.log('Submit')} variant={"contained"} type="submit">
+                {" "}Submit{" "}
             </Button>
         </div>
     );
@@ -227,17 +260,11 @@ export const ErrorMessage = (error) =>  {
     return (
         <div >
             <Modal
-                aria-labelledby="spring-modal-title"
-                aria-describedby="spring-modal-description"
                 open={open}
                 onClose={handleClose}
                 closeAfterTransition
                 BackdropComponent={Backdrop}
-                BackdropProps={{
-                    timeout: 500,
-                }}
-                style={{
-                }}
+                BackdropProps={{ timeout: 500, }}
             >
                 <Fade in={open} >
                     <Box style={{
@@ -265,6 +292,51 @@ export const ErrorMessage = (error) =>  {
                             Kindly fill up all required fields before proceeding
                         </Typography>
                     </Box>
+                </Fade>
+            </Modal>
+        </div>
+    );
+}
+
+export const AwaitResults = (waiting) =>  {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+    useEffect(()=> {
+        if (waiting.waiting){
+            handleOpen()
+        }
+    },[waiting])
+    useEffect(()=> {
+        if (!waiting.waiting){
+            handleClose()
+        }
+    },[waiting])
+    const doNothing = () => null;
+
+    return (
+        <div >
+            <Modal
+                open={open}
+                onClose={handleClose}
+                closeAfterTransition
+                BackdropComponent={Backdrop}
+                BackdropProps={{ timeout: 500, onClick: doNothing()}}
+
+            >
+                <Fade in={open} >
+                    <img src={loading} alt="loading..." style={{
+                        position: 'absolute',
+                        left: '0',
+                        right: '0',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        top: '45vh',
+                        bottom: '45vh',
+                        marginTop: 'auto',
+                        marginBottom: 'auto',
+                        textAlign: "center", alignItems:'center', justifyContent:'center',
+                        display:'flex'}}/>
                 </Fade>
             </Modal>
         </div>
