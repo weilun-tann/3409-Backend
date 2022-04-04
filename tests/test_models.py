@@ -112,7 +112,8 @@ def test_predict_pneumonia():
     expected = {"probability": 0.5, "outcome": 1}
     assert actual == expected
 
-#test for cataract
+
+# test for cataract
 def test_predict_cataract():
     """
     TODO - change your `actual` and `expected` accordingly
@@ -121,7 +122,8 @@ def test_predict_cataract():
     expected = {"outcome": "Cataract"}
     assert actual == expected
 
-#test for no cataract
+
+# test for no cataract
 def test_predict_cataract():
     """
     TODO - change your `actual` and `expected` accordingly
@@ -130,29 +132,32 @@ def test_predict_cataract():
     expected = {"outcome": "Normal"}
     assert actual == expected
 
-#test for Chronic Obstructive Pulmonary Disease
+
+# test for Chronic Obstructive Pulmonary Disease
 def test_predict_respiratory():
     """
     TODO - change your `actual` and `expected` accordingly
     """
     actual = respiratory.predict("uploads/162_1b2_Al_mc_AKGC417L.wav")
-    expected = {"outcome":  "Chronic Obstructive Pulmonary Disease"}
+    expected = {"outcome": "Chronic Obstructive Pulmonary Disease"}
     assert actual == expected
 
-#test for Healthy
+
+# test for Healthy
 def test_predict_respiratory():
     """
     TODO - change your `actual` and `expected` accordingly
     """
     actual = respiratory.predict("uploads/225_1b1_Pl_sc_Meditron.wav")
-    expected = {"outcome":  "Healthy"}
+    expected = {"outcome": "Healthy"}
     assert actual == expected
 
-#test for Respiratory Tract Infection
+
+# test for Respiratory Tract Infection
 def test_predict_respiratory():
     """
     TODO - change your `actual` and `expected` accordingly
     """
     actual = respiratory.predict("uploads/101_1b1_Al_sc_Meditron")
-    expected = {"outcome":  "Respiratory Tract Infection"}
+    expected = {"outcome": "Respiratory Tract Infection"}
     assert actual == expected
