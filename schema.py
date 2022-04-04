@@ -1,8 +1,16 @@
 from marshmallow import Schema, fields
 
 
-class PredictCataractResponseSchema(Schema):
-    cataract_type = fields.String()
+class PredictDiabetesResponseSchema(Schema):
+    outcome = fields.String()
+
+
+class PredictStrokeResponseSchema(Schema):
+    outcome = fields.String()
+
+
+class PredictCoronaryResponseSchema(Schema):
+    outcome = fields.String()
 
 
 class PredictPneumoniaResponseSchema(Schema):
