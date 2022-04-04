@@ -5,7 +5,7 @@ import pickle
 import numpy as np
 import librosa
 
-sys.path.append("..") 
+sys.path.append("..")
 from schema import PredictRespiratoryResponseSchema
 
 """
@@ -14,6 +14,8 @@ TODO - ADD THE ARGUMENTS YOU NEED FOR YOUR MODEL, LEAVING TYPES AS STRING
 2. The return value should be a dictionary, do NOT change the return type
 3. Backend will simply send it back as JSON
 """
+
+
 def predict(absolute_audio_path: str) -> PredictRespiratoryResponseSchema:
     """_summary_
 
@@ -28,17 +30,19 @@ def predict(absolute_audio_path: str) -> PredictRespiratoryResponseSchema:
     # model.predict
     # return results
 
-    #loading the model and weights
+    # loading the model and weights
     model = model_from_json(open("models/weights/respiratory/r_model.json").read())
     model.load_weights("models/weights/respiratory/model_r_weights.h5")
-    scaler = pickle.load(open("models/weights/respiratory/r_scaler.pkl",'rb'))
-    model.compile(loss='categorical_crossentropy',metrics=['accuracy'],optimizer='adam')
+    scaler = pickle.load(open("models/weights/respiratory/r_scaler.pkl", "rb"))
+    model.compile(
+        loss="categorical_crossentropy", metrics=["accuracy"], optimizer="adam"
+    )
 
-    #process input audio
+    # process input audio
     features = []
 
     file_name = "absolute_audio_path"
-    y, sr = librosa.load(file_name, mono=True) 
+    y, sr = librosa.load(file_name, mono=True)
     to_add = []
 
     chroma_stft = librosa.feature.chroma_stft(y=y, sr=sr)
@@ -55,12 +59,11 @@ def predict(absolute_audio_path: str) -> PredictRespiratoryResponseSchema:
     features.append(np.mean(spec_bw))
     features.append(np.mean(rolloff))
     features.append(np.mean(zcr))
-    features+=to_add
-    
+    features += to_add
 
-    #predict results
+    # predict results
     f = np.array(features)
-    f = f.reshape(1,25)
+    f = f.reshape(1, 25)
     f = scaler.transform(f)
     pred = np.argmax(model.predict(f), axis=1)
 
@@ -70,7 +73,6 @@ def predict(absolute_audio_path: str) -> PredictRespiratoryResponseSchema:
         outcome = "Respiratory Tract Infection"
     else:
         outcome = "Chronic Obstructive Pulmonary Disease"
-
 
     # TODO - `res` should exactly match whatever schema you use for .dump(res) below
     # TODO - Ensure the key NAMES are identical to PredictCataractResponseSchema
