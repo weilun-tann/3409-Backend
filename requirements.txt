@@ -32,6 +32,7 @@ joblib==1.1.0
 keras==2.8.0
 Keras-Preprocessing==1.1.2
 libclang==13.0.0
+libsndfile==1.0.30
 librosa==0.9.1
 Markdown==3.3.6
 MarkupSafe==2.0.1
