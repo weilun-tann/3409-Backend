@@ -45,6 +45,7 @@ opt-einsum==3.3.0
 packaging==21.3
 pandas==1.4.2
 pathspec==0.9.0
+pickle==4.0
 platformdirs==2.5.1
 pluggy==1.0.0
 protobuf==3.19.4
@@ -60,10 +61,12 @@ rsa==4.8
 scikit-learn==1.0.2
 scipy==1.8.0
 six==1.16.0
+skimage==0.0
 sklearn==0.0
 tensorboard==2.8.0
 tensorboard-data-server==0.6.1
 tensorboard-plugin-wit==1.8.1
+tensorflow==2.3.0
 tensorflow-cpu==2.8.0
 tensorflow-io-gcs-filesystem==0.24.0
 termcolor==1.1.0
