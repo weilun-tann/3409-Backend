@@ -14,12 +14,14 @@ from flask import (
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
-from models import coronary, diabetes, pneumonia, stroke
+from models import coronary, diabetes, pneumonia, stroke, cataract, respiratory
 from schema import (
     PredictCoronaryResponseSchema,
     PredictDiabetesResponseSchema,
     PredictPneumoniaResponseSchema,
     PredictStrokeResponseSchema,
+    PredictCataractResponseSchema,
+    PredictRespiratoryResponseSchema,
 )
 
 app = Flask(__name__, template_folder="swagger/templates")
@@ -306,6 +308,75 @@ def predict_pneumonia():
 
     # TODO - If an empty response is returned, `res` and your schema have probably diverged
     return PredictPneumoniaResponseSchema().dump(res)
+
+@app.route("/predict/cataract", methods=["POST"])
+def predict_cataract():
+    # TODO - fill in your docstrings (make sure name and data type are correct)
+    # Syntax follows OpenAPI3 (aka Swagger)
+    # https://support.smartbear.com/swaggerhub/docs/tutorials/openapi-3-tutorial.html
+    """
+    ---
+    post:
+      summary: Predict cataract based on image
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+            200:
+                content:
+                    application/json:
+                        schema: PredictCataractResponseSchema
+
+    """
+    file = request.files["file"]
+    filename = secure_filename(file.filename)
+    path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
+    file.save(path)
+    res = cataract.predict(path)
+
+    # TODO - If an empty response is returned, `res` and your schema have probably diverged
+    return PredictCataractResponseSchema().dump(res)
+
+
+@app.route("/predict/respiratory", methods=["POST"])
+def predict_respiratory():
+    # TODO - fill in your docstrings (make sure name and data type are correct)
+    # Syntax follows OpenAPI3 (aka Swagger)
+    # https://support.smartbear.com/swaggerhub/docs/tutorials/openapi-3-tutorial.html
+    """
+    ---
+    post:
+      summary: Predict respiratory disease based on audio recording
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+            200:
+                content:
+                    application/json:
+                        schema: PredictRespiratoryResponseSchema
+
+    """
+    file = request.files["file"]
+    filename = secure_filename(file.filename)
+    path = os.path.join(app.config["UPLOAD_FOLDER"], filename)
+    file.save(path)
+    res = respiratory.predict(path)
+
+    # TODO - If an empty response is returned, `res` and your schema have probably diverged
+    return PredictRespiratoryResponseSchema().dump(res)
 
 
 # TODO - for each endpoint you add, add the corresponding function here
