@@ -309,6 +309,7 @@ def predict_pneumonia():
     # TODO - If an empty response is returned, `res` and your schema have probably diverged
     return PredictPneumoniaResponseSchema().dump(res)
 
+
 @app.route("/predict/cataract", methods=["POST"])
 def predict_cataract():
     # TODO - fill in your docstrings (make sure name and data type are correct)
