@@ -28,12 +28,12 @@ def predict(absolute_image_path: str) -> PredictPneumoniaResponseSchema:
     # casting
     # load model
     model = model_from_json(
-        open("models/weights/pneumonia/pneumonia.json").read())
+        open("models/weights/pneumonia/model.json").read())
     model.load_weights("models/weights/pneumonia/pneumonia.h5")
 
     # model.predict
     img_dims = 64
-    img = absolute_image_path
+    img = plt.imread(absolute_image_path)
     img = cv2.resize(img, (img_dims, img_dims))
     img = np.dstack([img, img, img])
     img = img.astype('float32') / 255
