@@ -41,7 +41,7 @@ def predict(absolute_audio_path: str) -> PredictRespiratoryResponseSchema:
     # process input audio
     features = []
 
-    file_name = "absolute_audio_path"
+    file_name = absolute_audio_path
     y, sr = librosa.load(file_name, mono=True)
     to_add = []
 
