@@ -158,6 +158,6 @@ def test_predict_respiratory():
     """
     TODO - change your `actual` and `expected` accordingly
     """
-    actual = respiratory.predict("uploads/101_1b1_Al_sc_Meditron")
+    actual = respiratory.predict("uploads/101_1b1_Al_sc_Meditron.wav")
     expected = {"outcome": "Respiratory Tract Infection"}
     assert actual == expected
