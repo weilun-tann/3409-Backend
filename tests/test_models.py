@@ -104,20 +104,24 @@ def test_predict_stroke():
     ) == {"outcome": "Absent"}
 
 # test for pneumonia
+
+
 def test_predict_pneumonia():
     """
     TODO - change your `actual` and `expected` accordingly
     """
-    actual = pneumonia.predict("uploads/pneumonia_1.png")
+    actual = pneumonia.predict("uploads/pneumonia_1.jpeg")
     expected = {"outcome": "Present"}
     assert actual == expected
 
 # test for no pneumonia
+
+
 def test_predict_pneumonia():
     """
     TODO - change your `actual` and `expected` accordingly
     """
-    actual = pneumonia.predict("uploads/pneumonia_0.png")
+    actual = pneumonia.predict("uploads/pneumonia_0.jpeg")
     expected = {"outcome": "Absent"}
     assert actual == expected
 
