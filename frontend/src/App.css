@@ -1,12 +1,16 @@
+::-webkit-scrollbar {
+  width: 0%;
+}
+
 .App {
   text-align: center;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 75vh;
-  display: flex;
-  overflow: scroll;
-  padding: 2vh 8vh 0vh;
+  height: 65vh;
+  display: table;
+  margin: 0 auto;
+  padding-top: 25px;
 }
 
 .App-logo {
@@ -32,4 +36,20 @@
 
 .logo {
   max-height: 15vh;
+}
+
+.transition-enter {
+  opacity: 0;
+  width:10%;
+}
+.transition-enter-active {
+  opacity: 1;
+  transition: opacity 400ms ease-in-out;
+}
+.transition-exit {
+  opacity: 1;
+}
+.transition-exit-active {
+  opacity: 0;
+  transition: opacity 0ms linear;
 }

@@ -11,13 +11,12 @@ function CoronaryPage() {
     const onSubmit = (values) =>{
         for (var key in values) {
             if (values[key]===undefined || values[key]===''){
-                console.log(key);
                 showError(true);
                 showError(false); // this is to reinitialize to false
                 return;
             }
         }
-        changeQueryingState(true)
+        changeQueryingState(true);
         fetch(
             'https://ai-doctor-3409.herokuapp.com/predict/coronary?' + new URLSearchParams(values),
             { method: 'GET', }
@@ -25,12 +24,12 @@ function CoronaryPage() {
             .then((response)=> response.json())
             .then((result) => {
                 console.log('Success:', result.outcome);
-                changeQueryingState(false)
+                changeQueryingState(false);
                 navigate('/results');
             })
             .catch((error) => {
                 console.error('Error:', error);
-                changeQueryingState(false)
+                changeQueryingState(false);
                 navigate('/results');
             });
     }

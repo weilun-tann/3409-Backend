@@ -9,7 +9,7 @@ import rti from "./rti.png";
 
 function SelectionPage() {
     return (
-        <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent:'space-around', alignContent:'space-between', height:'45vh', width:'65vh'}}>
+        <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent:'space-around', alignContent:'space-between', height:'45vh', width:'65vh', paddingTop:'10vh'}}>
             <SelectSurvey name="Diabetes" imgLink={diabetes} pathLink={'/diabetes'}/>
             <SelectSurvey name="Coronary Artery Disease" imgLink={coronary} pathLink={'/coronary'}/>
             <SelectSurvey name="Stroke" imgLink={stroke} pathLink={'/stroke'}/>
@@ -17,8 +17,6 @@ function SelectionPage() {
             <SelectSurvey name="Pneumonia" imgLink={pneumonia} pathLink={'/pneumonia'}/>
             <SelectSurvey name="Respiratory Tract Infection" imgLink={rti} pathLink={'/pneumonia'}/>
         </div>
-
-
     );
 
 }

@@ -1,21 +1,29 @@
 import React, {useState} from 'react'
-import {FormInputDropdown, FormNumberInput, ErrorMessage, SubmitAndReset, ScaleSliderInput} from './Components'
+import {
+    FormInputDropdown,
+    FormNumberInput,
+    ErrorMessage,
+    SubmitAndReset,
+    ScaleSliderInput,
+    AwaitResults
+} from './Components'
 import {useForm} from "react-hook-form";
 import {useNavigate} from "react-router-dom";
 
 function DiabetesPage() {
     const { register, handleSubmit, control, getValues, reset } = useForm();
     const [error, showError] = useState(false);
+    const [query, changeQueryingState] = useState(false);
     let navigate = useNavigate();
     const onSubmit = (values) =>{
         for (var key in values) {
             if (values[key]===undefined || values[key]===''){
-                console.log(key);
                 showError(true);
                 showError(false); // this is to reinitialize to false
                 return;
             }
         }
+        changeQueryingState(true);
         fetch(
             'https://ai-doctor-3409.herokuapp.com/predict/diabetes?' + new URLSearchParams(values),
             { method: 'GET', }
@@ -23,10 +31,13 @@ function DiabetesPage() {
             .then((response)=> response.json())
             .then((result) => {
                 console.log('Success:', result.outcome);
-                navigate('/');
+                changeQueryingState(false);
+                navigate('/results');
             })
             .catch((error) => {
                 console.error('Error:', error);
+                changeQueryingState(false);
+                navigate('/results');
             });
     }
 
@@ -100,7 +111,7 @@ function DiabetesPage() {
                 <ScaleSliderInput name={'general_health'} control={control} question="What is the general condition of patient's overall health?" range={5} register={register}/>
                 <SubmitAndReset reset={reset}/>
                 <ErrorMessage error={error}/>
-
+                <AwaitResults waiting={query} />
             </div>
         </form>
 

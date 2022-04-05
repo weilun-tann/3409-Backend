@@ -194,7 +194,7 @@ export const ScaleSliderInput = ({name, question, control, range, register}) => 
 // Submit and Reset Button
 export const SubmitAndReset = (reset) => {
     return (
-        <div style={{width:'inherit', display: 'flex', justifyContent:'space-between', margin:'10px 0px', padding:'3px 0px'}}>
+        <div style={{width:'30vw', display: 'flex', justifyContent:'space-between', margin:'10px 0px', padding:'3px 0px 25px 0px'}}>
             <Button onClick={()=>console.log('Submit')} variant={"contained"} type="submit">
                 {" "}Submit{" "}
             </Button>
@@ -207,7 +207,7 @@ export const SubmitAndReset = (reset) => {
 
 export const Submit = () => {
     return (
-        <div style={{width:'inherit', display: 'flex', justifyContent:'center', margin:'10px 0px', padding:'3px 0px'}}>
+        <div style={{width:'30vw', display: 'flex', justifyContent:'center', margin:'10px 0px', padding:'3px 0px 25px 0px'}}>
             <Button onClick={()=>console.log('Submit')} variant={"contained"} type="submit">
                 {" "}Submit{" "}
             </Button>

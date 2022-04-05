@@ -6,7 +6,6 @@ function RespiratoryPage() {
     const { register, handleSubmit, control, getValues, reset } = useForm();
     const [error, showError] = useState(false);
     const onSubmit = (values) =>{
-        console.log(values);
         for (var key in values) {
             if (values[key]===undefined || values[key]===''){
                 console.log(key);
@@ -15,12 +14,20 @@ function RespiratoryPage() {
                 return;
             }
         }
-        reset();
-        return;
-
-
-        // values will be passed to Flask concurrently, not here
-
+        fetch(
+            'https://ai-doctor-3409.herokuapp.com/predict/respiratory?' + new URLSearchParams(values),
+            {
+                method: 'POST',
+                body: values,
+            }
+        )
+            .then((response) => response.json())
+            .then((result) => {
+                console.log('Success:', result);
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     }
 
     return (
