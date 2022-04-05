@@ -386,6 +386,8 @@ with app.test_request_context():
     spec.path(view=predict_diabetes)
     spec.path(view=predict_stroke)
     spec.path(view=predict_pneumonia)
+    spec.path(view=predict_respiratory)
+    spec.path(view=predict_cataract)
 
 
 @app.route("/docs")
