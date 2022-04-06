@@ -15,7 +15,7 @@ function SelectionPage() {
             <SelectSurvey name="Stroke" imgLink={stroke} pathLink={'/stroke'}/>
             <SelectSurvey name="Cataracts" imgLink={cataracts} pathLink={'/cataracts'}/>
             <SelectSurvey name="Pneumonia" imgLink={pneumonia} pathLink={'/pneumonia'}/>
-            <SelectSurvey name="Respiratory Tract Infection" imgLink={rti} pathLink={'/pneumonia'}/>
+            <SelectSurvey name="Respiratory Tract Infection" imgLink={rti} pathLink={'/respiratory'}/>
         </div>
     );
 

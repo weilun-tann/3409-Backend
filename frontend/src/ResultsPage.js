@@ -1,15 +1,19 @@
-import React, {useState} from 'react'
+import React from 'react'
+import {useLocation} from "react-router-dom";
 
 function ResultsPage() {
-    const [error, showError] = useState(false);
-
+    const location = useLocation();
+    console.log(location.state);
     return (
 
         <div className="ResultsPage" style={{height:'75vh', width:'30vw'}}>
-            <text>Results Page</text>
+
+            <h1>Results Page</h1>
+
+            <div>{location.state.prevPage}</div>
+            <div>{location.state.result}</div>
+
         </div>
-
-
 
     );
 

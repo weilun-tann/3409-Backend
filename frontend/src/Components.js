@@ -9,6 +9,7 @@ import { useSpring, animated } from 'react-spring';
 import {useNavigate} from "react-router-dom";
 import loading from './loading.svg'
 
+
 // selection icons for survey
 export const SelectSurvey =({name, imgLink, pathLink}) => {
     let navigate = useNavigate();
@@ -42,10 +43,11 @@ export const ImageUploader =({name, control, register}) => {
         control={control}
         defaultValue={null}
         render={({ field: { onChange, value } }) => (
-            <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', padding:'10px',justifyContent:'center', alignItems:'center'}}>
+            <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
                 <Button
                     onClick={()=>document.getElementById(name).click()}
                     variant="outlined"
+                    style={{marginTop:'5px',}}
                 > Click to upload </Button>
                 <input type='file' id={name} style={{display:'None'}} onChange={(image)=> {
                     onChange(image.target.files[0]);
@@ -53,7 +55,7 @@ export const ImageUploader =({name, control, register}) => {
                     value = image.target.files[0];
                 }}
                        accept=".png,.jpg,.jpeg" />
-                <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'30vw'}} />
+                <img src={ getImgURL(selectedImage) } style={{maxHeight:'45vh', maxWidth:'29vw', marginTop:'5px', borderRadius:'10px',}} />
                 <text style={{fontStyle:'italic', fontSize:'80%', marginTop:'5px', marginBottom:'5px'}}>*only .png, .jpg, .jpeg files are accepted</text>
             </div>
         )}
@@ -78,10 +80,11 @@ export const AudioUploader =({name, control, register}) => {
         control={control}
         defaultValue={null}
         render={({ field: { onChange, value } }) => (
-            <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', padding:'10px',justifyContent:'center', alignItems:'center'}}>
+            <div style={{border:'2px grey dashed', borderRadius:'10px', width: '30vw', minHeight:'10vh', display:'flex', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
                 <Button
                     onClick={()=>document.getElementById(name).click()}
                     variant="outlined"
+                    style={{marginTop:'5px',}}
                 > Click to upload </Button>
                 <input type='file' id={name} style={{display:'None'}} onChange={(audio)=> {
                     if (!audio.target.files[0]) {
@@ -105,7 +108,7 @@ export const AudioUploader =({name, control, register}) => {
                     src={ getAudioURL(selectedAudio) }
                     autoPlay ={false}
                     controls
-                    style={{maxHeight:'45vh', maxWidth:'30vw', marginTop:'5px'}}
+                    style={{maxHeight:'45vh', maxWidth:'29vw', marginTop:'5px'}}
                 />
                 <text style={{fontStyle:'italic', fontSize:'80%', marginTop:'5px', marginBottom:'5px'}}>*only .wav files are accepted</text>
             </div>
@@ -133,7 +136,7 @@ export const FormInputDropdown= ({name, question, options, control, register}) =
         render={({ field: { onChange, value } }) => (
             <div style={{width:'30vw', flexDirection: 'column', display:'flex' }}>
                 <a style={{width:'30vw', marginBottom:'12px', marginTop:'20px', textAlign:'left'}}>{question}</a>
-                <Select onChange={onChange} value={value} style={{marginBottom:'10px'}}>
+                <Select onChange={onChange} value={value} style={{marginBottom:'10px'}} >
                     {generateSelectOptions()}
                 </Select>
             </div>
@@ -151,7 +154,7 @@ export const FormNumberInput = ({name, question, control, register}) => {
         render={({ field: { onChange, value } }) => (
             <div style={{width:'30vw', flexDirection: 'column', display:'flex'}}>
                 <a style={{width:'30vw', marginBottom:'12px', marginTop:'20px', textAlign:'left'}}>{question}</a>
-                <TextField onChange={onChange} value={value} id="number-input" label="Value" type="text" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} style={{marginBottom:'10px'}}/>
+                <TextField onChange={onChange} value={value} id="number-input"  label="Value" type="text" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} style={{marginBottom:'10px'}}/>
             </div>
         )}
         {...register(name)}

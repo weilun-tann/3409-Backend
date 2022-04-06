@@ -32,12 +32,12 @@ function DiabetesPage() {
             .then((result) => {
                 console.log('Success:', result.outcome);
                 changeQueryingState(false);
-                navigate('/results');
+                navigate('/results', { state: {prevPage: 'Diabetes', result: result.outcome} });
             })
             .catch((error) => {
                 console.error('Error:', error);
                 changeQueryingState(false);
-                navigate('/results');
+                navigate('/results', { state: {prevPage: 'Diabetes', result: "Something went wrong... Try again later"} });
             });
     }
 
