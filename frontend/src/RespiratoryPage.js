@@ -17,8 +17,10 @@ function RespiratoryPage() {
                 return;
             }
         }
+        values['name'] = values.file.name
+        console.log(values)
         fetch(
-            'https://ai-doctor-3409.herokuapp.com/predict/respiratory',
+            'http://127.0.0.1:5000/predict/respiratory',
             {
                 method: 'POST',
                 body: values,
@@ -40,7 +42,7 @@ function RespiratoryPage() {
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="RespiratoryPage" style={{height:'75vh'}}>
-                <AudioUploader name='respiratory' control={control} register={register}/>
+                <AudioUploader name='file' control={control} register={register}/>
                 <Submit/>
                 <ErrorMessage error={error}/>
                 <AwaitResults waiting={query} />

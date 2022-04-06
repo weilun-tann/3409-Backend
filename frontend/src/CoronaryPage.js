@@ -18,7 +18,7 @@ function CoronaryPage() {
         }
         changeQueryingState(true);
         fetch(
-            'https://ai-doctor-3409.herokuapp.com/predict/coronary?' + new URLSearchParams(values),
+            'http://127.0.0.1:5000/predict/coronary?' + new URLSearchParams(values),
             { method: 'GET', }
         )
             .then((response)=> response.json())

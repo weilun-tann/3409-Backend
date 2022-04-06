@@ -14,10 +14,6 @@ from flask import (
 from flask_cors import CORS
 from werkzeug.utils import secure_filename
 
-<<<<<<< HEAD
-from models import cataract, pneumonia, diabetes
-from schema import PredictCataractResponseSchema, PredictPneumoniaResponseSchema, PredictDiabetesResponseSchema
-=======
 from models import coronary, diabetes, pneumonia, stroke, cataract, respiratory
 from schema import (
     PredictCoronaryResponseSchema,
@@ -27,7 +23,6 @@ from schema import (
     PredictCataractResponseSchema,
     PredictRespiratoryResponseSchema,
 )
->>>>>>> main
 
 app = Flask(__name__, template_folder="swagger/templates")
 CORS(app)
@@ -278,100 +273,6 @@ def predict_stroke():
     # TODO - If an empty response is returned, `res` and your schema have probably diverged
     return PredictStrokeResponseSchema().dump(res)
 
-# GET endpoint with URL parameters
-@app.route("/predict/diabetes")
-def predict_diabetes():
-    # TODO - fill in your docstrings (make sure name and data type are correct)
-    # Syntax follows OpenAPI3 (aka Swagger)
-    # https://support.smartbear.com/swaggerhub/docs/tutorials/openapi-3-tutorial.html
-    """
-    ---
-    get:
-        summary: Predict diabetes based on numerical/categorical variables
-        parameters:
-        - name: hypertension
-          in: query
-          description: The patient's age
-          schema:
-            type: string
-        - name: high_cholesterol
-          in: query
-          description: The patient's age
-          schema:
-            type: string
-        - name: bmi
-          in: query
-          description: The patient's gender
-          schema:
-            type: float
-        - name: smoker
-          in: query
-          description: The patient's age
-          schema:
-            type: string
-        - name: stroke
-          in: query
-          description: The patient's age
-          schema:
-            type: string
-        - name: coronary_artery_disease
-          in: query
-          description: The patient's gender
-          schema:
-            type: string
-        - name: active_lifestyle
-          in: query
-          description: The patient's age
-          schema:
-            type: string
-        - name: fruits_consumption
-          in: query
-          description: The patient's age
-          schema:
-            type: string
-        - name: vegetable_consumption
-          in: query
-          description: The patient's gender
-          schema:
-            type: string
-        - name: alcohol_consumption
-          in: query
-          description: The patient's gender
-          schema:
-            type: string
-        - name: general_health
-          in: query
-          description: The patient's gender
-          schema:
-            type: float
-        - name: sex
-          in: query
-          description: The patient's gender
-          schema:
-            type: string
-        - name: age
-          in: query
-          description: The patient's gender
-          schema:
-            type: float
-        - name: income
-          in: query
-          description: The patient's gender
-          schema:
-            type: float
-        responses:
-            200:
-                content:
-                    application/json:
-                        schema: PredictDiabetesResponseSchema
-
-    """
-    age = request.args.get("age")
-    gender = request.args.get("gender")
-    res = diabetes.predict(age, gender)
-
-    # TODO - If an empty response is returned, `res` and your schema have probably diverged
-    return PredictDiabetesResponseSchema().dump(res)
 
 # GET endpoint with URL parameters
 @app.route("/predict/pneumonia", methods=["POST"])
@@ -485,12 +386,8 @@ with app.test_request_context():
     spec.path(view=predict_diabetes)
     spec.path(view=predict_stroke)
     spec.path(view=predict_pneumonia)
-<<<<<<< HEAD
-    spec.path(view=predict_diabetes)
-=======
     spec.path(view=predict_respiratory)
     spec.path(view=predict_cataract)
->>>>>>> main
 
 
 @app.route("/docs")

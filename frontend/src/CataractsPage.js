@@ -17,8 +17,9 @@ function CataractsPage() {
                 return;
             }
         }
+        console.log(values);
         fetch(
-            'https://ai-doctor-3409.herokuapp.com/predict/cataracts',
+            'http://127.0.0.1:5000/predict/cataract?',
             {
                 method: 'POST',
                 body: values,
@@ -41,7 +42,7 @@ function CataractsPage() {
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="CataractsPage" style={{height:'75vh'}}>
-                <ImageUploader name='cataracts' control={control} register={register}/>
+                <ImageUploader name='file' control={control} register={register}/>
                 <Submit/>
                 <ErrorMessage error={error}/>
                 <AwaitResults waiting={query} />
