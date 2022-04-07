@@ -31,6 +31,13 @@ npm install
 npm start
 ```
 
+# DEPLOYMENT - FRONTEND
+```
+cd frontend
+npm run build
+firebase deploy
+```
+
 # DEVELOPMENT - BACKEND
 1. Hosted at https://ai-doctor-3409.herokuapp.com/
 2. Automatic deployments are set up, so all commits to `main` will trigger a new deployment

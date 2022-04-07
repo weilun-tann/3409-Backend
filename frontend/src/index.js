@@ -4,6 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom";
+import { initializeApp } from "firebase/app";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCxwjbILiOqLY-iCaosYCxLxDa36kAhzNI",
+  authDomain: "bc3409-react.firebaseapp.com",
+  projectId: "bc3409-react",
+  storageBucket: "bc3409-react.appspot.com",
+  messagingSenderId: "565717303456",
+  appId: "1:565717303456:web:6dfc9da7fe20d235c6c9c5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 ReactDOM.render(
       <BrowserRouter>
