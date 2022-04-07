@@ -18,19 +18,19 @@ function CoronaryPage() {
         }
         changeQueryingState(true);
         fetch(
-            'https://ai-doctor-3409.herokuapp.com/predict/coronary?' + new URLSearchParams(values),
+            'http://127.0.0.1:5000/predict/coronary?' + new URLSearchParams(values),
             { method: 'GET', }
         )
             .then((response)=> response.json())
             .then((result) => {
                 console.log('Success:', result.outcome);
                 changeQueryingState(false);
-                navigate('/results');
+                navigate('/results', { state: {prevPage: 'Coronary', result: result.outcome} });
             })
             .catch((error) => {
                 console.error('Error:', error);
                 changeQueryingState(false);
-                navigate('/results');
+                navigate('/results', { state: {prevPage: 'Coronary', result: "Something went wrong... Try again later"} });
             });
     }
 
@@ -68,7 +68,7 @@ function CoronaryPage() {
                 <FormNumberInput name={'age'} control={control} question="What is the patient's age?" register={register}/>
                 <FormInputDropdown name={'gender'} control={control} question="What is the patient's gender?" options={options_Gender} register={register}/>
                 <FormInputDropdown name={'chest_pain_type'} control={control} question="What kind of chest pain does patient suffer from, if any?" options={options_ChestPainType} register={register}/>
-                <FormNumberInput name={'resting_blood_pressure'} control={control} question="What is the patient's resting blood pressure (mm Hg)?" register={register}/>
+                <FormNumberInput name={'resting_blood_pressure'} control={control} question="What is the patient's resting blood pressure (mm/Hg)?" register={register}/>
                 <FormNumberInput name={'cholesterol'} control={control} question="What is the patient's average cholesterol level (mm/dL)?" register={register}/>
                 <FormInputDropdown name={'fasting_blood_sugar'} control={control} question="What is the level of fasting blood sugar level of patient (mg/dl)?" options={options_FastingBloodSugar} register={register}/>
                 <FormInputDropdown name={'resting_ecg'} control={control} question="What is the pattern of patient's resting ECG?" options={options_RestingECG} register={register}/>

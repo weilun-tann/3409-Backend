@@ -25,12 +25,12 @@ function StrokePage() {
             .then((result) => {
                 console.log('Success:', result.outcome);
                 changeQueryingState(false);
-                navigate('/results');
+                navigate('/results', { state: {prevPage: 'Stroke', result: result.outcome} });
             })
             .catch((error) => {
                 console.error('Error:', error);
                 changeQueryingState(false);
-                navigate('/results');
+                navigate('/results', { state: {prevPage: 'Stroke', result: "Something went wrong... Try again later"} });
             });
     }
 
