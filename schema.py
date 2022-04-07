@@ -23,6 +23,7 @@ class PredictCataractResponseSchema(Schema):
 
 
 class PredictRespiratoryResponseSchema(Schema):
+    probability = fields.Float()
     outcome = fields.String()
 
 
