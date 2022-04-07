@@ -41,9 +41,9 @@ def predict(absolute_image_path: str) -> PredictCataractResponseSchema:
     # predict results
     pred = model.predict(image)
     if pred > 0.5:
-        outcome = "Cataract"
+        outcome = "Present"
     else:
-        outcome = "Normal"
+        outcome = "Absent"
 
     # TODO - `res` should exactly match whatever schema you use for .dump(res) below
     # TODO - Ensure the key NAMES are identical to PredictCataractResponseSchema
