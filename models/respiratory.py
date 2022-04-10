@@ -65,7 +65,9 @@ def predict(absolute_audio_path: str) -> PredictRespiratoryResponseSchema:
     f = np.array(features)
     f = f.reshape(1, 25)
     f = scaler.transform(f)
-    pred = np.argmax(model.predict(f), axis=1)
+    prediction = model.predict(f)
+    prob = np.amax(prediction)
+    pred = np.argmax(prediction, axis=1)
 
     if pred == 0:
         outcome = "Healthy"
@@ -78,6 +80,7 @@ def predict(absolute_audio_path: str) -> PredictRespiratoryResponseSchema:
     # TODO - Ensure the key NAMES are identical to PredictCataractResponseSchema
     # TODO - Ensure the value TYPES are identical to PredictCataractResponseSchema
     res: PredictRespiratoryResponseSchema = {
+        "probability": prob,
         "outcome": outcome,
     }
     return res
