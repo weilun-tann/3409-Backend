@@ -139,7 +139,10 @@ def test_predict_respiratory():
     TODO - change your `actual` and `expected` accordingly
     """
     actual = respiratory.predict("uploads/162_1b2_Al_mc_AKGC417L.wav")
-    expected = {"probability": 0.999997, "outcome": "Chronic Obstructive Pulmonary Disease"}
+    expected = {
+        "probability": 0.999997,
+        "outcome": "Chronic Obstructive Pulmonary Disease",
+    }
     assert actual == expected
 
 
