@@ -15,7 +15,7 @@ class PredictCoronaryResponseSchema(Schema):
 
 class PredictPneumoniaResponseSchema(Schema):
     probability = fields.Float()
-    outcome = fields.Int()
+    outcome = fields.String()
 
 
 class PredictCataractResponseSchema(Schema):
