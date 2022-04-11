@@ -103,6 +103,7 @@ def test_predict_stroke():
         }
     ) == {"outcome": "Absent"}
 
+
 # test for pneumonia
 
 
@@ -113,6 +114,7 @@ def test_predict_pneumonia():
     actual = pneumonia.predict("uploads/pneumonia_1.jpeg")
     expected = {"outcome": "Present"}
     assert actual == expected
+
 
 # test for no pneumonia
 
