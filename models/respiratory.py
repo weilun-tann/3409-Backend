@@ -80,7 +80,7 @@ def predict(absolute_audio_path: str) -> PredictRespiratoryResponseSchema:
     # TODO - Ensure the key NAMES are identical to PredictCataractResponseSchema
     # TODO - Ensure the value TYPES are identical to PredictCataractResponseSchema
     res: PredictRespiratoryResponseSchema = {
-        "probability": prob,
+        "probability": round(float(prob), 2),
         "outcome": outcome,
     }
     return res
