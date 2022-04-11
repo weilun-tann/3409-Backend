@@ -27,8 +27,7 @@ def predict(absolute_image_path: str) -> PredictPneumoniaResponseSchema:
     """
     # casting
     # load model
-    model = model_from_json(
-        open("models/weights/pneumonia/model.json").read())
+    model = model_from_json(open("models/weights/pneumonia/model.json").read())
     model.load_weights("models/weights/pneumonia/pneumonia.h5")
 
     # model.predict
@@ -36,18 +35,16 @@ def predict(absolute_image_path: str) -> PredictPneumoniaResponseSchema:
     img = plt.imread(absolute_image_path)
     img = cv2.resize(img, (img_dims, img_dims))
     img = np.dstack([img, img, img])
-    img = img.astype('float32') / 255
+    img = img.astype("float32") / 255
     result = model.predict(np.expand_dims(image.img_to_array(img), axis=0))
 
     if result[0][0] > 0.5:
-        prediction = 'Present'
+        prediction = "Present"
     else:
-        prediction = 'Absent'
+        prediction = "Absent"
 
     # TODO - `res` should exactly match whatever schema you use for .dump(res) below
     # TODO - Ensure the key NAMES are identical to PredictPneumoniaResponseSchema
     # TODO - Ensure the value TYPES are identical to PredictPneumoniaResponseSchema
-    res: PredictPneumoniaResponseSchema = {
-        "outcome": prediction
-    }
+    res: PredictPneumoniaResponseSchema = {"outcome": prediction}
     return res
