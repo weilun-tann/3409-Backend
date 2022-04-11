@@ -1,5 +1,5 @@
 import pytest
-from models import coronary, diabetes, pneumonia, stroke, cataract, respiratory
+from models import cataract, coronary, diabetes, pneumonia, respiratory, stroke
 
 
 def test_predict_coronary():
@@ -155,7 +155,7 @@ def test_predict_respiratory():
     """
     actual = respiratory.predict("uploads/162_1b2_Al_mc_AKGC417L.wav")
     expected = {
-        "probability": 0.999997,
+        "probability": 0.99,
         "outcome": "Chronic Obstructive Pulmonary Disease",
     }
     assert actual == expected
@@ -167,7 +167,7 @@ def test_predict_respiratory():
     TODO - change your `actual` and `expected` accordingly
     """
     actual = respiratory.predict("uploads/225_1b1_Pl_sc_Meditron.wav")
-    expected = {"probability": 0.9953597, "outcome": "Healthy"}
+    expected = {"probability": 0.99, "outcome": "Healthy"}
     assert actual == expected
 
 
@@ -177,5 +177,5 @@ def test_predict_respiratory():
     TODO - change your `actual` and `expected` accordingly
     """
     actual = respiratory.predict("uploads/101_1b1_Al_sc_Meditron.wav")
-    expected = {"probability": 0.98769474, "outcome": "Respiratory Tract Infection"}
+    expected = {"probability": 0.98, "outcome": "Respiratory Tract Infection"}
     assert actual == expected
