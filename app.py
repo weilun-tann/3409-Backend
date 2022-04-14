@@ -379,6 +379,7 @@ def predict_respiratory():
     # TODO - If an empty response is returned, `res` and your schema have probably diverged
     return PredictRespiratoryResponseSchema().dump(res)
 
+
 # TODO - for each endpoint you add, add the corresponding function here
 with app.test_request_context():
     spec.path(view=predict_cataract)
