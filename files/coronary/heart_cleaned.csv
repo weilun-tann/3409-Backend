@@ -1,0 +1,918 @@
+Age,Gender,ChestPainType,RestingBloodPressure,Cholesterol,FastingBloodSugar,RestingECG,MaxHR,ExerciseInducedAngina,CoronaryArteryDisease
+40,Male,Atypical Angina,140,289.0,Less than or equal to 120 mg/dl,Normal,172,N,Normal
+49,Female,Non-anginal Pain,160,180.0,Less than or equal to 120 mg/dl,Normal,156,N,Disease
+37,Male,Atypical Angina,130,244.0,Less than or equal to 120 mg/dl,ST,98,N,Normal
+48,Female,Asymptomatic,138,244.0,Less than or equal to 120 mg/dl,Normal,108,Y,Disease
+54,Male,Non-anginal Pain,150,195.0,Less than or equal to 120 mg/dl,Normal,122,N,Normal
+39,Male,Non-anginal Pain,120,339.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+45,Female,Atypical Angina,130,244.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+54,Male,Atypical Angina,110,208.0,Less than or equal to 120 mg/dl,Normal,142,N,Normal
+37,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,Normal,130,Y,Disease
+48,Female,Atypical Angina,120,284.0,Less than or equal to 120 mg/dl,Normal,120,N,Normal
+37,Female,Non-anginal Pain,130,211.0,Less than or equal to 120 mg/dl,Normal,142,N,Normal
+58,Male,Atypical Angina,136,164.0,Less than or equal to 120 mg/dl,ST,99,Y,Disease
+39,Male,Atypical Angina,120,204.0,Less than or equal to 120 mg/dl,Normal,145,N,Normal
+49,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,Normal,140,Y,Disease
+42,Female,Non-anginal Pain,115,211.0,Less than or equal to 120 mg/dl,ST,137,N,Normal
+54,Female,Atypical Angina,120,273.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+38,Male,Asymptomatic,110,196.0,Less than or equal to 120 mg/dl,Normal,166,N,Disease
+43,Female,Atypical Angina,120,244.0,Less than or equal to 120 mg/dl,Normal,165,N,Normal
+60,Male,Asymptomatic,100,248.0,Less than or equal to 120 mg/dl,Normal,125,N,Disease
+36,Male,Atypical Angina,120,267.0,Less than or equal to 120 mg/dl,Normal,160,N,Disease
+43,Female,Typical Angina,100,223.0,Less than or equal to 120 mg/dl,Normal,142,N,Normal
+44,Male,Atypical Angina,120,184.0,Less than or equal to 120 mg/dl,Normal,142,N,Normal
+49,Female,Atypical Angina,124,201.0,Less than or equal to 120 mg/dl,Normal,164,N,Normal
+44,Male,Atypical Angina,150,288.0,Less than or equal to 120 mg/dl,Normal,150,Y,Disease
+40,Male,Non-anginal Pain,130,215.0,Less than or equal to 120 mg/dl,Normal,138,N,Normal
+36,Male,Non-anginal Pain,130,209.0,Less than or equal to 120 mg/dl,Normal,178,N,Normal
+53,Male,Asymptomatic,124,260.0,Less than or equal to 120 mg/dl,ST,112,Y,Normal
+52,Male,Atypical Angina,120,284.0,Less than or equal to 120 mg/dl,Normal,118,N,Normal
+53,Female,Atypical Angina,113,468.0,Less than or equal to 120 mg/dl,Normal,127,N,Normal
+51,Male,Atypical Angina,125,188.0,Less than or equal to 120 mg/dl,Normal,145,N,Normal
+53,Male,Non-anginal Pain,145,518.0,Less than or equal to 120 mg/dl,Normal,130,N,Disease
+56,Male,Non-anginal Pain,130,167.0,Less than or equal to 120 mg/dl,Normal,114,N,Normal
+54,Male,Asymptomatic,125,224.0,Less than or equal to 120 mg/dl,Normal,122,N,Disease
+41,Male,Asymptomatic,130,172.0,Less than or equal to 120 mg/dl,ST,130,N,Disease
+43,Female,Atypical Angina,150,244.0,Less than or equal to 120 mg/dl,Normal,154,N,Normal
+32,Male,Atypical Angina,125,244.0,Less than or equal to 120 mg/dl,Normal,155,N,Normal
+65,Male,Asymptomatic,140,306.0,More than 120 mg/dl,Normal,87,Y,Disease
+41,Female,Atypical Angina,110,250.0,Less than or equal to 120 mg/dl,ST,142,N,Normal
+48,Female,Atypical Angina,120,177.0,More than 120 mg/dl,ST,148,N,Normal
+48,Female,Asymptomatic,150,227.0,Less than or equal to 120 mg/dl,Normal,130,Y,Normal
+54,Female,Atypical Angina,150,230.0,Less than or equal to 120 mg/dl,Normal,130,N,Normal
+54,Female,Non-anginal Pain,130,294.0,Less than or equal to 120 mg/dl,ST,100,Y,Disease
+35,Male,Atypical Angina,150,264.0,Less than or equal to 120 mg/dl,Normal,168,N,Normal
+52,Male,Non-anginal Pain,140,259.0,Less than or equal to 120 mg/dl,ST,170,N,Normal
+43,Male,Asymptomatic,120,175.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+59,Male,Non-anginal Pain,130,318.0,Less than or equal to 120 mg/dl,Normal,120,Y,Normal
+37,Male,Asymptomatic,120,223.0,Less than or equal to 120 mg/dl,Normal,168,N,Normal
+50,Male,Atypical Angina,140,216.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+36,Male,Non-anginal Pain,112,340.0,Less than or equal to 120 mg/dl,Normal,184,N,Normal
+41,Male,Asymptomatic,110,289.0,Less than or equal to 120 mg/dl,Normal,170,N,Disease
+50,Male,Asymptomatic,130,233.0,Less than or equal to 120 mg/dl,Normal,121,Y,Disease
+47,Female,Asymptomatic,120,205.0,Less than or equal to 120 mg/dl,Normal,98,Y,Disease
+45,Male,Atypical Angina,140,224.0,More than 120 mg/dl,Normal,122,N,Normal
+41,Female,Atypical Angina,130,245.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+52,Female,Asymptomatic,130,180.0,Less than or equal to 120 mg/dl,Normal,140,Y,Normal
+51,Female,Atypical Angina,160,194.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+31,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,Normal,153,Y,Disease
+58,Male,Non-anginal Pain,130,213.0,Less than or equal to 120 mg/dl,ST,140,N,Disease
+54,Male,Asymptomatic,150,365.0,Less than or equal to 120 mg/dl,ST,134,N,Normal
+52,Male,Asymptomatic,112,342.0,Less than or equal to 120 mg/dl,ST,96,Y,Disease
+49,Male,Atypical Angina,100,253.0,Less than or equal to 120 mg/dl,Normal,174,N,Normal
+43,Female,Non-anginal Pain,150,254.0,Less than or equal to 120 mg/dl,Normal,175,N,Normal
+45,Male,Asymptomatic,140,224.0,Less than or equal to 120 mg/dl,Normal,144,N,Normal
+46,Male,Asymptomatic,120,277.0,Less than or equal to 120 mg/dl,Normal,125,Y,Disease
+50,Female,Atypical Angina,110,202.0,Less than or equal to 120 mg/dl,Normal,145,N,Normal
+37,Female,Atypical Angina,120,244.0,Less than or equal to 120 mg/dl,Normal,130,N,Normal
+45,Female,Asymptomatic,132,297.0,Less than or equal to 120 mg/dl,Normal,144,N,Normal
+32,Male,Atypical Angina,110,225.0,Less than or equal to 120 mg/dl,Normal,184,N,Normal
+52,Male,Asymptomatic,160,246.0,Less than or equal to 120 mg/dl,ST,82,Y,Disease
+44,Male,Asymptomatic,150,412.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+57,Male,Atypical Angina,140,265.0,Less than or equal to 120 mg/dl,ST,145,Y,Disease
+44,Male,Atypical Angina,130,215.0,Less than or equal to 120 mg/dl,Normal,135,N,Normal
+52,Male,Asymptomatic,120,182.0,Less than or equal to 120 mg/dl,Normal,150,N,Disease
+44,Female,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,ST,115,N,Normal
+55,Male,Asymptomatic,140,268.0,Less than or equal to 120 mg/dl,Normal,128,Y,Disease
+46,Male,Non-anginal Pain,150,163.0,Less than or equal to 120 mg/dl,Normal,116,N,Normal
+32,Male,Asymptomatic,118,529.0,Less than or equal to 120 mg/dl,Normal,130,N,Disease
+35,Female,Asymptomatic,140,167.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+52,Male,Atypical Angina,140,100.0,Less than or equal to 120 mg/dl,Normal,138,Y,Normal
+49,Male,Asymptomatic,130,206.0,Less than or equal to 120 mg/dl,Normal,170,N,Disease
+55,Male,Non-anginal Pain,110,277.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+54,Male,Atypical Angina,120,238.0,Less than or equal to 120 mg/dl,Normal,154,N,Normal
+63,Male,Asymptomatic,150,223.0,Less than or equal to 120 mg/dl,Normal,115,N,Disease
+52,Male,Atypical Angina,160,196.0,Less than or equal to 120 mg/dl,Normal,165,N,Normal
+56,Male,Asymptomatic,150,244.0,More than 120 mg/dl,Normal,125,Y,Disease
+66,Male,Asymptomatic,140,139.0,Less than or equal to 120 mg/dl,Normal,94,Y,Disease
+65,Male,Asymptomatic,170,263.0,More than 120 mg/dl,Normal,112,Y,Disease
+53,Female,Atypical Angina,140,216.0,Less than or equal to 120 mg/dl,Normal,142,Y,Normal
+43,Male,Typical Angina,120,291.0,Less than or equal to 120 mg/dl,ST,155,N,Disease
+55,Male,Asymptomatic,140,229.0,Less than or equal to 120 mg/dl,Normal,110,Y,Normal
+49,Female,Atypical Angina,110,244.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+39,Male,Asymptomatic,130,307.0,Less than or equal to 120 mg/dl,Normal,140,N,Normal
+52,Female,Atypical Angina,120,210.0,Less than or equal to 120 mg/dl,Normal,148,N,Normal
+48,Male,Asymptomatic,160,329.0,Less than or equal to 120 mg/dl,Normal,92,Y,Disease
+39,Female,Non-anginal Pain,110,244.0,Less than or equal to 120 mg/dl,ST,180,N,Normal
+58,Male,Asymptomatic,130,263.0,Less than or equal to 120 mg/dl,Normal,140,Y,Disease
+43,Male,Atypical Angina,142,207.0,Less than or equal to 120 mg/dl,Normal,138,N,Normal
+39,Male,Non-anginal Pain,160,147.0,More than 120 mg/dl,Normal,160,N,Normal
+56,Male,Asymptomatic,120,85.0,Less than or equal to 120 mg/dl,Normal,140,N,Normal
+41,Male,Atypical Angina,125,269.0,Less than or equal to 120 mg/dl,Normal,144,N,Normal
+65,Male,Asymptomatic,130,275.0,Less than or equal to 120 mg/dl,ST,115,Y,Disease
+51,Male,Asymptomatic,130,179.0,Less than or equal to 120 mg/dl,Normal,100,N,Normal
+40,Female,Asymptomatic,150,392.0,Less than or equal to 120 mg/dl,Normal,130,N,Disease
+40,Male,Asymptomatic,120,466.0,More than 120 mg/dl,Normal,152,Y,Disease
+46,Male,Asymptomatic,118,244.0,Less than or equal to 120 mg/dl,Normal,124,N,Disease
+57,Male,Atypical Angina,140,260.0,More than 120 mg/dl,Normal,140,N,Normal
+48,Female,Asymptomatic,120,254.0,Less than or equal to 120 mg/dl,ST,110,N,Normal
+34,Male,Atypical Angina,150,214.0,Less than or equal to 120 mg/dl,ST,168,N,Normal
+50,Male,Asymptomatic,140,129.0,Less than or equal to 120 mg/dl,Normal,135,N,Normal
+39,Male,Atypical Angina,190,241.0,Less than or equal to 120 mg/dl,Normal,106,N,Normal
+59,Female,Atypical Angina,130,188.0,Less than or equal to 120 mg/dl,Normal,124,N,Normal
+57,Male,Asymptomatic,150,244.0,Less than or equal to 120 mg/dl,Normal,92,Y,Disease
+47,Male,Asymptomatic,140,276.0,More than 120 mg/dl,Normal,125,Y,Normal
+38,Male,Atypical Angina,140,297.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+49,Female,Non-anginal Pain,130,207.0,Less than or equal to 120 mg/dl,ST,135,N,Normal
+33,Female,Asymptomatic,100,246.0,Less than or equal to 120 mg/dl,Normal,150,Y,Disease
+38,Male,Asymptomatic,120,282.0,Less than or equal to 120 mg/dl,Normal,170,N,Disease
+59,Female,Asymptomatic,130,244.0,More than 120 mg/dl,ST,130,Y,Disease
+35,Female,Typical Angina,120,160.0,Less than or equal to 120 mg/dl,ST,185,N,Normal
+34,Male,Typical Angina,140,156.0,Less than or equal to 120 mg/dl,Normal,180,N,Disease
+47,Female,Non-anginal Pain,135,248.0,More than 120 mg/dl,Normal,170,N,Disease
+52,Female,Non-anginal Pain,125,272.0,Less than or equal to 120 mg/dl,Normal,139,N,Normal
+46,Male,Asymptomatic,110,240.0,Less than or equal to 120 mg/dl,ST,140,N,Normal
+58,Female,Atypical Angina,180,393.0,Less than or equal to 120 mg/dl,Normal,110,Y,Disease
+58,Male,Atypical Angina,130,230.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+54,Male,Atypical Angina,120,244.0,Less than or equal to 120 mg/dl,Normal,110,N,Normal
+34,Female,Atypical Angina,130,161.0,Less than or equal to 120 mg/dl,Normal,190,N,Normal
+48,Female,Asymptomatic,108,163.0,Less than or equal to 120 mg/dl,Normal,175,N,Normal
+54,Female,Atypical Angina,120,230.0,More than 120 mg/dl,Normal,140,N,Normal
+42,Male,Non-anginal Pain,120,228.0,Less than or equal to 120 mg/dl,Normal,152,Y,Normal
+38,Male,Non-anginal Pain,145,292.0,Less than or equal to 120 mg/dl,Normal,130,N,Normal
+46,Male,Asymptomatic,110,202.0,Less than or equal to 120 mg/dl,Normal,150,Y,Disease
+56,Male,Asymptomatic,170,388.0,Less than or equal to 120 mg/dl,ST,122,Y,Disease
+56,Male,Asymptomatic,150,230.0,Less than or equal to 120 mg/dl,ST,124,Y,Disease
+61,Female,Asymptomatic,130,294.0,Less than or equal to 120 mg/dl,ST,120,Y,Normal
+49,Male,Non-anginal Pain,115,265.0,Less than or equal to 120 mg/dl,Normal,175,N,Disease
+43,Female,Atypical Angina,120,215.0,Less than or equal to 120 mg/dl,ST,175,N,Normal
+39,Male,Atypical Angina,120,241.0,Less than or equal to 120 mg/dl,ST,146,N,Normal
+54,Male,Asymptomatic,140,166.0,Less than or equal to 120 mg/dl,Normal,118,Y,Disease
+43,Male,Asymptomatic,150,247.0,Less than or equal to 120 mg/dl,Normal,130,Y,Disease
+52,Male,Asymptomatic,160,331.0,Less than or equal to 120 mg/dl,Normal,94,Y,Disease
+50,Male,Asymptomatic,140,341.0,Less than or equal to 120 mg/dl,ST,125,Y,Disease
+47,Male,Asymptomatic,160,244.0,Less than or equal to 120 mg/dl,ST,158,Y,Disease
+53,Male,Asymptomatic,140,243.0,Less than or equal to 120 mg/dl,Normal,155,N,Normal
+56,Female,Atypical Angina,120,279.0,Less than or equal to 120 mg/dl,Normal,150,N,Disease
+39,Male,Asymptomatic,110,273.0,Less than or equal to 120 mg/dl,Normal,132,N,Normal
+42,Male,Atypical Angina,120,198.0,Less than or equal to 120 mg/dl,Normal,155,N,Normal
+43,Female,Atypical Angina,120,249.0,Less than or equal to 120 mg/dl,ST,176,N,Normal
+50,Male,Atypical Angina,120,168.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+54,Male,Asymptomatic,130,603.0,More than 120 mg/dl,Normal,125,Y,Disease
+39,Male,Atypical Angina,130,215.0,Less than or equal to 120 mg/dl,Normal,120,N,Normal
+48,Male,Atypical Angina,100,159.0,Less than or equal to 120 mg/dl,Normal,100,N,Normal
+40,Male,Atypical Angina,130,275.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+55,Male,Asymptomatic,120,270.0,Less than or equal to 120 mg/dl,Normal,140,N,Normal
+41,Male,Atypical Angina,120,244.0,Less than or equal to 120 mg/dl,ST,160,N,Normal
+56,Male,Asymptomatic,155,342.0,More than 120 mg/dl,Normal,150,Y,Disease
+38,Male,Asymptomatic,110,190.0,Less than or equal to 120 mg/dl,Normal,150,Y,Disease
+49,Male,Asymptomatic,140,185.0,Less than or equal to 120 mg/dl,Normal,130,N,Normal
+44,Male,Asymptomatic,130,290.0,Less than or equal to 120 mg/dl,Normal,100,Y,Disease
+54,Male,Atypical Angina,160,244.0,Less than or equal to 120 mg/dl,ST,130,N,Normal
+59,Male,Asymptomatic,140,264.0,More than 120 mg/dl,LVH,119,Y,Disease
+49,Male,Asymptomatic,128,212.0,Less than or equal to 120 mg/dl,Normal,96,Y,Disease
+47,Male,Atypical Angina,160,263.0,Less than or equal to 120 mg/dl,Normal,174,N,Normal
+42,Male,Atypical Angina,120,196.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+52,Female,Atypical Angina,140,225.0,Less than or equal to 120 mg/dl,Normal,140,N,Normal
+46,Male,Typical Angina,140,272.0,More than 120 mg/dl,Normal,175,N,Disease
+50,Male,Asymptomatic,140,231.0,Less than or equal to 120 mg/dl,ST,140,Y,Disease
+48,Male,Atypical Angina,140,238.0,Less than or equal to 120 mg/dl,Normal,118,N,Normal
+58,Male,Asymptomatic,135,222.0,Less than or equal to 120 mg/dl,Normal,100,N,Normal
+58,Male,Non-anginal Pain,140,179.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+29,Male,Atypical Angina,120,243.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+40,Male,Non-anginal Pain,140,235.0,Less than or equal to 120 mg/dl,Normal,188,N,Normal
+53,Male,Atypical Angina,140,320.0,Less than or equal to 120 mg/dl,Normal,162,N,Normal
+49,Male,Non-anginal Pain,140,187.0,Less than or equal to 120 mg/dl,Normal,172,N,Normal
+52,Male,Asymptomatic,140,266.0,Less than or equal to 120 mg/dl,Normal,134,Y,Disease
+43,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,Normal,135,Y,Disease
+54,Male,Asymptomatic,140,216.0,Less than or equal to 120 mg/dl,Normal,105,N,Disease
+59,Male,Atypical Angina,140,287.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+37,Male,Non-anginal Pain,130,194.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+46,Female,Asymptomatic,130,238.0,Less than or equal to 120 mg/dl,Normal,90,N,Normal
+52,Male,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+51,Male,Atypical Angina,130,224.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+52,Male,Asymptomatic,140,404.0,Less than or equal to 120 mg/dl,Normal,124,Y,Disease
+46,Male,Asymptomatic,110,238.0,Less than or equal to 120 mg/dl,ST,140,Y,Normal
+54,Female,Atypical Angina,160,312.0,Less than or equal to 120 mg/dl,Normal,130,N,Normal
+58,Male,Non-anginal Pain,160,211.0,More than 120 mg/dl,ST,92,N,Disease
+58,Male,Atypical Angina,130,251.0,Less than or equal to 120 mg/dl,Normal,110,N,Normal
+41,Male,Asymptomatic,120,237.0,More than 120 mg/dl,Normal,138,Y,Disease
+50,Female,Asymptomatic,120,328.0,Less than or equal to 120 mg/dl,Normal,110,Y,Normal
+53,Male,Asymptomatic,180,285.0,Less than or equal to 120 mg/dl,ST,120,Y,Disease
+46,Male,Asymptomatic,180,280.0,Less than or equal to 120 mg/dl,ST,120,N,Normal
+50,Male,Atypical Angina,170,209.0,Less than or equal to 120 mg/dl,ST,116,N,Normal
+48,Male,Atypical Angina,130,245.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+45,Male,Non-anginal Pain,135,192.0,Less than or equal to 120 mg/dl,Normal,110,N,Normal
+41,Female,Atypical Angina,125,244.0,Less than or equal to 120 mg/dl,Normal,180,N,Normal
+62,Female,Typical Angina,160,193.0,Less than or equal to 120 mg/dl,Normal,116,N,Normal
+49,Male,Asymptomatic,120,297.0,Less than or equal to 120 mg/dl,Normal,132,N,Normal
+42,Male,Atypical Angina,150,268.0,Less than or equal to 120 mg/dl,Normal,136,N,Normal
+53,Male,Asymptomatic,120,246.0,Less than or equal to 120 mg/dl,Normal,116,Y,Disease
+57,Female,Typical Angina,130,308.0,Less than or equal to 120 mg/dl,Normal,98,N,Normal
+47,Male,Typical Angina,110,249.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+46,Male,Non-anginal Pain,120,230.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+42,Male,Non-anginal Pain,160,244.0,Less than or equal to 120 mg/dl,Normal,146,N,Normal
+31,Female,Atypical Angina,100,219.0,Less than or equal to 120 mg/dl,ST,150,N,Normal
+56,Male,Atypical Angina,130,184.0,Less than or equal to 120 mg/dl,Normal,100,N,Normal
+50,Male,Asymptomatic,150,215.0,Less than or equal to 120 mg/dl,Normal,140,Y,Normal
+35,Male,Atypical Angina,120,308.0,Less than or equal to 120 mg/dl,LVH,180,N,Normal
+35,Male,Atypical Angina,110,244.0,Less than or equal to 120 mg/dl,Normal,140,N,Disease
+28,Male,Atypical Angina,130,132.0,Less than or equal to 120 mg/dl,LVH,185,N,Normal
+54,Male,Asymptomatic,125,216.0,Less than or equal to 120 mg/dl,Normal,140,N,Disease
+48,Male,Asymptomatic,106,263.0,More than 120 mg/dl,Normal,110,N,Disease
+50,Female,Non-anginal Pain,140,288.0,Less than or equal to 120 mg/dl,Normal,140,Y,Disease
+56,Male,Non-anginal Pain,130,276.0,Less than or equal to 120 mg/dl,Normal,128,Y,Normal
+56,Female,Non-anginal Pain,130,219.0,Less than or equal to 120 mg/dl,ST,164,N,Normal
+47,Male,Asymptomatic,150,226.0,Less than or equal to 120 mg/dl,Normal,98,Y,Disease
+30,Female,Typical Angina,170,237.0,Less than or equal to 120 mg/dl,ST,170,N,Normal
+39,Male,Asymptomatic,110,280.0,Less than or equal to 120 mg/dl,Normal,150,N,Disease
+54,Male,Non-anginal Pain,120,217.0,Less than or equal to 120 mg/dl,Normal,137,N,Normal
+55,Male,Atypical Angina,140,196.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+29,Male,Atypical Angina,140,263.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+46,Male,Asymptomatic,130,222.0,Less than or equal to 120 mg/dl,Normal,112,N,Disease
+51,Female,Asymptomatic,160,303.0,Less than or equal to 120 mg/dl,Normal,150,Y,Disease
+48,Female,Non-anginal Pain,120,195.0,Less than or equal to 120 mg/dl,Normal,125,N,Normal
+33,Male,Non-anginal Pain,120,244.0,Less than or equal to 120 mg/dl,Normal,185,N,Normal
+55,Male,Atypical Angina,120,256.0,More than 120 mg/dl,Normal,137,N,Normal
+50,Male,Asymptomatic,145,264.0,Less than or equal to 120 mg/dl,Normal,150,N,Disease
+53,Male,Non-anginal Pain,120,195.0,Less than or equal to 120 mg/dl,Normal,140,N,Normal
+38,Male,Asymptomatic,92,117.0,Less than or equal to 120 mg/dl,Normal,134,Y,Disease
+41,Male,Atypical Angina,120,295.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+37,Female,Asymptomatic,130,173.0,Less than or equal to 120 mg/dl,ST,184,N,Normal
+37,Male,Asymptomatic,130,315.0,Less than or equal to 120 mg/dl,Normal,158,N,Normal
+40,Male,Non-anginal Pain,130,281.0,Less than or equal to 120 mg/dl,Normal,167,N,Normal
+38,Female,Atypical Angina,120,275.0,Less than or equal to 120 mg/dl,Normal,129,N,Normal
+41,Male,Asymptomatic,112,244.0,Less than or equal to 120 mg/dl,Normal,142,N,Normal
+54,Female,Atypical Angina,140,309.0,Less than or equal to 120 mg/dl,ST,140,N,Normal
+39,Male,Atypical Angina,120,200.0,Less than or equal to 120 mg/dl,Normal,160,Y,Normal
+41,Male,Asymptomatic,120,336.0,Less than or equal to 120 mg/dl,Normal,118,Y,Disease
+55,Male,Typical Angina,140,295.0,Less than or equal to 120 mg/dl,Normal,136,N,Disease
+48,Male,Asymptomatic,160,244.0,Less than or equal to 120 mg/dl,Normal,99,Y,Disease
+48,Male,Asymptomatic,160,193.0,Less than or equal to 120 mg/dl,Normal,102,Y,Disease
+55,Male,Atypical Angina,145,326.0,Less than or equal to 120 mg/dl,Normal,155,N,Normal
+54,Male,Asymptomatic,200,198.0,Less than or equal to 120 mg/dl,Normal,142,Y,Disease
+55,Male,Atypical Angina,160,292.0,More than 120 mg/dl,Normal,143,Y,Disease
+43,Female,Atypical Angina,120,266.0,Less than or equal to 120 mg/dl,Normal,118,N,Normal
+48,Male,Asymptomatic,160,268.0,Less than or equal to 120 mg/dl,Normal,103,Y,Disease
+54,Male,Typical Angina,120,171.0,Less than or equal to 120 mg/dl,Normal,137,N,Normal
+54,Male,Non-anginal Pain,120,237.0,Less than or equal to 120 mg/dl,Normal,150,Y,Disease
+48,Male,Asymptomatic,122,275.0,More than 120 mg/dl,ST,150,Y,Disease
+45,Male,Asymptomatic,130,219.0,Less than or equal to 120 mg/dl,ST,130,Y,Disease
+49,Male,Asymptomatic,130,341.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+44,Male,Asymptomatic,135,491.0,Less than or equal to 120 mg/dl,Normal,135,N,Disease
+48,Male,Asymptomatic,120,260.0,Less than or equal to 120 mg/dl,Normal,115,N,Disease
+61,Male,Asymptomatic,125,292.0,Less than or equal to 120 mg/dl,ST,115,Y,Normal
+62,Male,Atypical Angina,140,271.0,Less than or equal to 120 mg/dl,Normal,152,N,Normal
+55,Male,Asymptomatic,145,248.0,Less than or equal to 120 mg/dl,Normal,96,Y,Disease
+53,Female,Non-anginal Pain,120,244.0,Less than or equal to 120 mg/dl,Normal,130,N,Normal
+55,Female,Atypical Angina,130,394.0,Less than or equal to 120 mg/dl,LVH,150,N,Normal
+36,Male,Non-anginal Pain,150,160.0,Less than or equal to 120 mg/dl,Normal,172,N,Normal
+51,Female,Non-anginal Pain,150,244.0,Less than or equal to 120 mg/dl,Normal,120,N,Normal
+55,Female,Atypical Angina,122,320.0,Less than or equal to 120 mg/dl,Normal,155,N,Normal
+46,Male,Atypical Angina,140,275.0,Less than or equal to 120 mg/dl,Normal,165,Y,Normal
+54,Female,Atypical Angina,120,221.0,Less than or equal to 120 mg/dl,Normal,138,N,Normal
+46,Male,Asymptomatic,120,231.0,Less than or equal to 120 mg/dl,Normal,115,Y,Disease
+59,Male,Asymptomatic,130,126.0,Less than or equal to 120 mg/dl,Normal,125,N,Disease
+47,Male,Non-anginal Pain,140,193.0,Less than or equal to 120 mg/dl,Normal,145,Y,Disease
+54,Male,Atypical Angina,160,244.0,Less than or equal to 120 mg/dl,Normal,175,N,Normal
+52,Male,Asymptomatic,130,298.0,Less than or equal to 120 mg/dl,Normal,110,Y,Disease
+34,Male,Atypical Angina,98,220.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+54,Male,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,Normal,91,Y,Disease
+47,Female,Non-anginal Pain,130,235.0,Less than or equal to 120 mg/dl,Normal,145,N,Normal
+45,Male,Asymptomatic,120,225.0,Less than or equal to 120 mg/dl,Normal,140,N,Normal
+32,Female,Atypical Angina,105,198.0,Less than or equal to 120 mg/dl,Normal,165,N,Normal
+55,Male,Asymptomatic,140,201.0,Less than or equal to 120 mg/dl,Normal,130,Y,Disease
+55,Male,Non-anginal Pain,120,220.0,Less than or equal to 120 mg/dl,LVH,134,N,Normal
+45,Female,Atypical Angina,180,295.0,Less than or equal to 120 mg/dl,Normal,180,N,Normal
+59,Male,Non-anginal Pain,180,213.0,Less than or equal to 120 mg/dl,Normal,100,N,Normal
+51,Male,Non-anginal Pain,135,160.0,Less than or equal to 120 mg/dl,Normal,150,N,Disease
+52,Male,Asymptomatic,170,244.0,Less than or equal to 120 mg/dl,Normal,126,Y,Disease
+57,Female,Asymptomatic,180,347.0,Less than or equal to 120 mg/dl,ST,126,Y,Normal
+54,Female,Atypical Angina,130,253.0,Less than or equal to 120 mg/dl,ST,155,N,Normal
+60,Male,Non-anginal Pain,120,246.0,Less than or equal to 120 mg/dl,LVH,135,N,Normal
+49,Male,Asymptomatic,150,222.0,Less than or equal to 120 mg/dl,Normal,122,N,Disease
+51,Female,Non-anginal Pain,130,220.0,Less than or equal to 120 mg/dl,Normal,160,Y,Normal
+55,Female,Atypical Angina,110,344.0,Less than or equal to 120 mg/dl,ST,160,N,Normal
+42,Male,Asymptomatic,140,358.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+51,Female,Non-anginal Pain,110,190.0,Less than or equal to 120 mg/dl,Normal,120,N,Normal
+59,Male,Asymptomatic,140,169.0,Less than or equal to 120 mg/dl,Normal,140,N,Normal
+53,Male,Atypical Angina,120,181.0,Less than or equal to 120 mg/dl,Normal,132,N,Normal
+48,Female,Atypical Angina,133,308.0,Less than or equal to 120 mg/dl,ST,156,N,Normal
+36,Male,Atypical Angina,120,166.0,Less than or equal to 120 mg/dl,Normal,180,N,Normal
+48,Male,Non-anginal Pain,110,211.0,Less than or equal to 120 mg/dl,Normal,138,N,Normal
+47,Female,Atypical Angina,140,244.0,Less than or equal to 120 mg/dl,Normal,135,N,Normal
+53,Male,Asymptomatic,130,182.0,Less than or equal to 120 mg/dl,Normal,148,N,Normal
+65,Male,Asymptomatic,115,244.0,Less than or equal to 120 mg/dl,Normal,93,Y,Disease
+32,Male,Typical Angina,95,244.0,More than 120 mg/dl,Normal,127,N,Disease
+61,Male,Asymptomatic,105,244.0,More than 120 mg/dl,Normal,110,Y,Disease
+50,Male,Asymptomatic,145,244.0,More than 120 mg/dl,Normal,139,Y,Disease
+57,Male,Asymptomatic,110,244.0,More than 120 mg/dl,ST,131,Y,Disease
+51,Male,Asymptomatic,110,244.0,More than 120 mg/dl,Normal,92,N,Disease
+47,Male,Asymptomatic,110,244.0,More than 120 mg/dl,ST,149,N,Disease
+60,Male,Asymptomatic,160,244.0,More than 120 mg/dl,Normal,149,N,Disease
+55,Male,Atypical Angina,140,244.0,Less than or equal to 120 mg/dl,ST,150,N,Normal
+53,Male,Asymptomatic,125,244.0,More than 120 mg/dl,Normal,120,N,Disease
+62,Female,Asymptomatic,120,244.0,More than 120 mg/dl,ST,123,Y,Disease
+51,Male,Asymptomatic,95,244.0,More than 120 mg/dl,Normal,126,N,Disease
+51,Female,Asymptomatic,120,244.0,More than 120 mg/dl,Normal,127,Y,Disease
+55,Male,Asymptomatic,115,244.0,More than 120 mg/dl,Normal,155,N,Disease
+53,Male,Atypical Angina,130,244.0,Less than or equal to 120 mg/dl,ST,120,N,Normal
+58,Male,Asymptomatic,115,244.0,More than 120 mg/dl,Normal,138,N,Disease
+57,Male,Asymptomatic,95,244.0,More than 120 mg/dl,Normal,182,N,Disease
+65,Male,Asymptomatic,155,244.0,Less than or equal to 120 mg/dl,Normal,154,N,Normal
+60,Male,Asymptomatic,125,244.0,More than 120 mg/dl,Normal,110,N,Disease
+41,Male,Asymptomatic,125,244.0,More than 120 mg/dl,Normal,176,N,Disease
+34,Male,Asymptomatic,115,244.0,More than 120 mg/dl,Normal,154,N,Disease
+53,Male,Asymptomatic,80,244.0,Less than or equal to 120 mg/dl,Normal,141,Y,Normal
+74,Male,Atypical Angina,145,244.0,More than 120 mg/dl,ST,123,N,Disease
+57,Male,Non-anginal Pain,105,244.0,More than 120 mg/dl,Normal,148,N,Disease
+56,Male,Asymptomatic,140,244.0,More than 120 mg/dl,Normal,121,Y,Disease
+61,Male,Asymptomatic,130,244.0,More than 120 mg/dl,Normal,77,N,Disease
+68,Male,Asymptomatic,145,244.0,More than 120 mg/dl,Normal,136,N,Disease
+59,Male,Non-anginal Pain,125,244.0,More than 120 mg/dl,Normal,175,N,Disease
+63,Male,Asymptomatic,100,244.0,More than 120 mg/dl,Normal,109,N,Disease
+38,Female,Asymptomatic,105,244.0,More than 120 mg/dl,Normal,166,N,Disease
+62,Male,Asymptomatic,115,244.0,More than 120 mg/dl,Normal,128,Y,Disease
+46,Male,Asymptomatic,100,244.0,More than 120 mg/dl,ST,133,N,Disease
+42,Male,Asymptomatic,105,244.0,More than 120 mg/dl,Normal,128,Y,Disease
+45,Male,Non-anginal Pain,110,244.0,Less than or equal to 120 mg/dl,Normal,138,N,Normal
+59,Male,Asymptomatic,125,244.0,More than 120 mg/dl,Normal,119,Y,Disease
+52,Male,Asymptomatic,95,244.0,More than 120 mg/dl,Normal,82,Y,Disease
+60,Male,Asymptomatic,130,244.0,More than 120 mg/dl,ST,130,Y,Disease
+60,Male,Non-anginal Pain,115,244.0,More than 120 mg/dl,Normal,143,N,Disease
+56,Male,Asymptomatic,115,244.0,More than 120 mg/dl,ST,82,N,Disease
+38,Male,Non-anginal Pain,100,244.0,Less than or equal to 120 mg/dl,Normal,179,N,Normal
+40,Male,Asymptomatic,95,244.0,More than 120 mg/dl,ST,144,N,Disease
+51,Male,Asymptomatic,130,244.0,More than 120 mg/dl,Normal,170,N,Disease
+62,Male,Typical Angina,120,244.0,More than 120 mg/dl,LVH,134,N,Disease
+72,Male,Non-anginal Pain,160,244.0,Less than or equal to 120 mg/dl,LVH,114,N,Normal
+63,Male,Asymptomatic,150,244.0,More than 120 mg/dl,ST,154,N,Disease
+63,Male,Asymptomatic,140,244.0,More than 120 mg/dl,LVH,149,N,Disease
+64,Female,Asymptomatic,95,244.0,More than 120 mg/dl,Normal,145,N,Disease
+43,Male,Asymptomatic,100,244.0,More than 120 mg/dl,Normal,122,N,Disease
+64,Male,Asymptomatic,110,244.0,More than 120 mg/dl,Normal,114,Y,Disease
+61,Male,Asymptomatic,110,244.0,More than 120 mg/dl,Normal,113,N,Disease
+52,Male,Asymptomatic,130,244.0,More than 120 mg/dl,Normal,120,N,Disease
+51,Male,Asymptomatic,120,244.0,More than 120 mg/dl,Normal,104,N,Disease
+69,Male,Asymptomatic,135,244.0,Less than or equal to 120 mg/dl,Normal,130,N,Disease
+59,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,Normal,115,N,Disease
+48,Male,Asymptomatic,115,244.0,More than 120 mg/dl,Normal,128,N,Disease
+69,Male,Asymptomatic,137,244.0,Less than or equal to 120 mg/dl,ST,104,Y,Disease
+36,Male,Asymptomatic,110,244.0,More than 120 mg/dl,Normal,125,Y,Disease
+53,Male,Asymptomatic,120,244.0,More than 120 mg/dl,Normal,120,N,Disease
+43,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,ST,140,Y,Disease
+56,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,ST,100,Y,Disease
+58,Male,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,ST,100,Y,Disease
+55,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,ST,92,N,Disease
+67,Male,Typical Angina,145,244.0,Less than or equal to 120 mg/dl,LVH,125,N,Disease
+46,Male,Asymptomatic,115,244.0,Less than or equal to 120 mg/dl,Normal,113,Y,Disease
+53,Male,Atypical Angina,120,244.0,Less than or equal to 120 mg/dl,Normal,95,N,Disease
+38,Male,Non-anginal Pain,115,244.0,Less than or equal to 120 mg/dl,Normal,128,Y,Disease
+53,Male,Non-anginal Pain,105,244.0,Less than or equal to 120 mg/dl,Normal,115,N,Disease
+62,Male,Non-anginal Pain,160,244.0,Less than or equal to 120 mg/dl,Normal,72,Y,Disease
+47,Male,Asymptomatic,160,244.0,Less than or equal to 120 mg/dl,Normal,124,Y,Disease
+56,Male,Non-anginal Pain,155,244.0,Less than or equal to 120 mg/dl,ST,99,N,Disease
+56,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,ST,148,N,Disease
+56,Male,Non-anginal Pain,120,244.0,Less than or equal to 120 mg/dl,Normal,97,N,Normal
+64,Female,Asymptomatic,200,244.0,Less than or equal to 120 mg/dl,Normal,140,Y,Disease
+61,Male,Asymptomatic,150,244.0,Less than or equal to 120 mg/dl,Normal,117,Y,Disease
+68,Male,Asymptomatic,135,244.0,Less than or equal to 120 mg/dl,ST,120,Y,Disease
+57,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+63,Male,Asymptomatic,150,244.0,Less than or equal to 120 mg/dl,Normal,86,Y,Disease
+60,Male,Asymptomatic,135,244.0,Less than or equal to 120 mg/dl,Normal,63,Y,Disease
+66,Male,Asymptomatic,150,244.0,Less than or equal to 120 mg/dl,Normal,108,Y,Disease
+63,Male,Asymptomatic,185,244.0,Less than or equal to 120 mg/dl,Normal,98,Y,Disease
+59,Male,Asymptomatic,135,244.0,Less than or equal to 120 mg/dl,Normal,115,Y,Disease
+61,Male,Asymptomatic,125,244.0,Less than or equal to 120 mg/dl,Normal,105,Y,Disease
+73,Female,Non-anginal Pain,160,244.0,Less than or equal to 120 mg/dl,ST,121,N,Disease
+47,Male,Non-anginal Pain,155,244.0,Less than or equal to 120 mg/dl,Normal,118,Y,Disease
+65,Male,Asymptomatic,160,244.0,More than 120 mg/dl,ST,122,N,Disease
+70,Male,Asymptomatic,140,244.0,More than 120 mg/dl,Normal,157,Y,Disease
+50,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,ST,156,Y,Disease
+60,Male,Asymptomatic,160,244.0,Less than or equal to 120 mg/dl,ST,99,Y,Disease
+50,Male,Asymptomatic,115,244.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+43,Male,Asymptomatic,115,244.0,Less than or equal to 120 mg/dl,Normal,145,Y,Disease
+38,Female,Asymptomatic,110,244.0,Less than or equal to 120 mg/dl,Normal,156,N,Disease
+54,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,Normal,155,N,Disease
+61,Male,Asymptomatic,150,244.0,Less than or equal to 120 mg/dl,Normal,105,Y,Disease
+42,Male,Asymptomatic,145,244.0,Less than or equal to 120 mg/dl,Normal,99,Y,Disease
+53,Male,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,LVH,135,Y,Disease
+55,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,Normal,83,N,Disease
+61,Male,Asymptomatic,160,244.0,More than 120 mg/dl,ST,145,N,Disease
+51,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,Normal,60,N,Disease
+70,Male,Asymptomatic,115,244.0,Less than or equal to 120 mg/dl,ST,92,Y,Disease
+61,Male,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,LVH,115,N,Disease
+38,Male,Asymptomatic,150,244.0,More than 120 mg/dl,Normal,120,Y,Disease
+57,Male,Asymptomatic,160,244.0,More than 120 mg/dl,Normal,98,Y,Disease
+38,Male,Asymptomatic,135,244.0,More than 120 mg/dl,Normal,150,N,Disease
+62,Female,Typical Angina,140,244.0,More than 120 mg/dl,Normal,143,N,Disease
+58,Male,Asymptomatic,170,244.0,More than 120 mg/dl,ST,105,Y,Disease
+52,Male,Asymptomatic,165,244.0,More than 120 mg/dl,Normal,122,Y,Disease
+61,Male,Non-anginal Pain,200,244.0,More than 120 mg/dl,ST,70,N,Disease
+50,Female,Asymptomatic,160,244.0,More than 120 mg/dl,Normal,110,N,Disease
+51,Male,Asymptomatic,130,244.0,More than 120 mg/dl,ST,163,N,Disease
+65,Male,Asymptomatic,145,244.0,More than 120 mg/dl,ST,67,N,Disease
+52,Male,Asymptomatic,135,244.0,More than 120 mg/dl,Normal,128,Y,Disease
+47,Male,Non-anginal Pain,110,244.0,More than 120 mg/dl,Normal,120,Y,Disease
+35,Male,Asymptomatic,120,244.0,More than 120 mg/dl,Normal,130,Y,Disease
+57,Male,Asymptomatic,140,244.0,More than 120 mg/dl,Normal,100,Y,Disease
+62,Male,Asymptomatic,115,244.0,More than 120 mg/dl,Normal,72,Y,Disease
+59,Male,Asymptomatic,110,244.0,More than 120 mg/dl,Normal,94,N,Disease
+53,Male,Non-anginal Pain,160,244.0,More than 120 mg/dl,LVH,122,Y,Disease
+62,Male,Asymptomatic,150,244.0,More than 120 mg/dl,ST,78,N,Disease
+54,Male,Asymptomatic,180,244.0,More than 120 mg/dl,Normal,150,N,Disease
+56,Male,Asymptomatic,125,244.0,More than 120 mg/dl,Normal,103,Y,Disease
+56,Male,Non-anginal Pain,125,244.0,More than 120 mg/dl,Normal,98,N,Disease
+54,Male,Asymptomatic,130,244.0,More than 120 mg/dl,Normal,110,Y,Disease
+66,Female,Asymptomatic,155,244.0,More than 120 mg/dl,Normal,90,N,Disease
+63,Male,Asymptomatic,140,260.0,Less than or equal to 120 mg/dl,ST,112,Y,Disease
+44,Male,Asymptomatic,130,209.0,Less than or equal to 120 mg/dl,ST,127,N,Normal
+60,Male,Asymptomatic,132,218.0,Less than or equal to 120 mg/dl,ST,140,Y,Disease
+55,Male,Asymptomatic,142,228.0,Less than or equal to 120 mg/dl,ST,149,Y,Disease
+66,Male,Non-anginal Pain,110,213.0,More than 120 mg/dl,LVH,99,Y,Normal
+66,Male,Non-anginal Pain,120,244.0,Less than or equal to 120 mg/dl,ST,120,N,Normal
+65,Male,Asymptomatic,150,236.0,More than 120 mg/dl,ST,105,Y,Disease
+60,Male,Non-anginal Pain,180,244.0,Less than or equal to 120 mg/dl,ST,140,Y,Normal
+60,Male,Non-anginal Pain,120,244.0,More than 120 mg/dl,Normal,141,Y,Disease
+60,Male,Atypical Angina,160,267.0,More than 120 mg/dl,ST,157,N,Disease
+56,Male,Atypical Angina,126,166.0,Less than or equal to 120 mg/dl,ST,140,N,Normal
+59,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,ST,117,Y,Disease
+62,Male,Asymptomatic,110,244.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+63,Male,Non-anginal Pain,133,244.0,Less than or equal to 120 mg/dl,LVH,120,Y,Disease
+57,Male,Asymptomatic,128,244.0,More than 120 mg/dl,ST,148,Y,Disease
+62,Male,Asymptomatic,120,220.0,Less than or equal to 120 mg/dl,ST,86,N,Normal
+63,Male,Asymptomatic,170,177.0,Less than or equal to 120 mg/dl,Normal,84,Y,Disease
+46,Male,Asymptomatic,110,236.0,Less than or equal to 120 mg/dl,Normal,125,Y,Disease
+63,Male,Asymptomatic,126,244.0,Less than or equal to 120 mg/dl,ST,120,N,Normal
+60,Male,Asymptomatic,152,244.0,Less than or equal to 120 mg/dl,ST,118,Y,Normal
+58,Male,Asymptomatic,116,244.0,Less than or equal to 120 mg/dl,Normal,124,N,Disease
+64,Male,Asymptomatic,120,244.0,More than 120 mg/dl,ST,106,N,Disease
+63,Male,Non-anginal Pain,130,244.0,Less than or equal to 120 mg/dl,ST,111,Y,Disease
+74,Male,Non-anginal Pain,138,244.0,Less than or equal to 120 mg/dl,Normal,116,N,Normal
+52,Male,Non-anginal Pain,128,244.0,Less than or equal to 120 mg/dl,ST,180,N,Disease
+69,Male,Asymptomatic,130,244.0,More than 120 mg/dl,ST,129,N,Disease
+51,Male,Asymptomatic,128,244.0,More than 120 mg/dl,ST,125,Y,Disease
+60,Male,Asymptomatic,130,186.0,More than 120 mg/dl,ST,140,Y,Disease
+56,Male,Asymptomatic,120,100.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+55,Male,Non-anginal Pain,136,228.0,Less than or equal to 120 mg/dl,ST,124,Y,Disease
+54,Male,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,ST,117,Y,Disease
+77,Male,Asymptomatic,124,171.0,Less than or equal to 120 mg/dl,ST,110,Y,Disease
+63,Male,Asymptomatic,160,230.0,More than 120 mg/dl,Normal,105,Y,Disease
+52,Male,Non-anginal Pain,122,244.0,Less than or equal to 120 mg/dl,Normal,110,Y,Disease
+64,Male,Asymptomatic,144,244.0,Less than or equal to 120 mg/dl,ST,122,Y,Disease
+60,Male,Asymptomatic,140,281.0,Less than or equal to 120 mg/dl,ST,118,Y,Disease
+60,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,Normal,133,Y,Normal
+58,Male,Asymptomatic,136,203.0,More than 120 mg/dl,Normal,123,Y,Disease
+59,Male,Asymptomatic,154,244.0,Less than or equal to 120 mg/dl,ST,131,Y,Normal
+61,Male,Non-anginal Pain,120,244.0,Less than or equal to 120 mg/dl,Normal,80,Y,Disease
+40,Male,Asymptomatic,125,244.0,More than 120 mg/dl,Normal,165,N,Disease
+61,Male,Asymptomatic,134,244.0,More than 120 mg/dl,ST,86,N,Disease
+41,Male,Asymptomatic,104,244.0,Less than or equal to 120 mg/dl,ST,111,N,Normal
+57,Male,Asymptomatic,139,277.0,More than 120 mg/dl,ST,118,Y,Disease
+63,Male,Asymptomatic,136,244.0,Less than or equal to 120 mg/dl,Normal,84,Y,Disease
+59,Male,Asymptomatic,122,233.0,Less than or equal to 120 mg/dl,Normal,117,Y,Disease
+51,Male,Asymptomatic,128,244.0,Less than or equal to 120 mg/dl,Normal,107,N,Normal
+59,Male,Non-anginal Pain,131,244.0,Less than or equal to 120 mg/dl,Normal,128,Y,Disease
+42,Male,Non-anginal Pain,134,244.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+55,Male,Non-anginal Pain,120,244.0,Less than or equal to 120 mg/dl,ST,125,Y,Disease
+63,Female,Atypical Angina,132,244.0,Less than or equal to 120 mg/dl,Normal,130,N,Normal
+62,Male,Asymptomatic,152,153.0,Less than or equal to 120 mg/dl,ST,97,Y,Disease
+56,Male,Atypical Angina,124,224.0,More than 120 mg/dl,Normal,161,N,Normal
+53,Male,Asymptomatic,126,244.0,Less than or equal to 120 mg/dl,Normal,106,N,Disease
+68,Male,Asymptomatic,138,244.0,Less than or equal to 120 mg/dl,Normal,130,Y,Disease
+53,Male,Asymptomatic,154,244.0,More than 120 mg/dl,ST,140,Y,Disease
+60,Male,Non-anginal Pain,141,244.0,More than 120 mg/dl,ST,122,Y,Disease
+62,Male,Atypical Angina,131,244.0,Less than or equal to 120 mg/dl,Normal,130,N,Normal
+59,Male,Asymptomatic,178,244.0,More than 120 mg/dl,LVH,120,Y,Disease
+51,Male,Asymptomatic,132,218.0,More than 120 mg/dl,LVH,139,N,Normal
+61,Male,Asymptomatic,110,244.0,More than 120 mg/dl,Normal,108,Y,Disease
+57,Male,Asymptomatic,130,311.0,More than 120 mg/dl,ST,148,Y,Disease
+56,Male,Non-anginal Pain,170,244.0,Less than or equal to 120 mg/dl,LVH,123,Y,Disease
+58,Male,Atypical Angina,126,244.0,More than 120 mg/dl,Normal,110,Y,Disease
+69,Male,Non-anginal Pain,140,244.0,More than 120 mg/dl,ST,118,N,Disease
+67,Male,Typical Angina,142,270.0,More than 120 mg/dl,Normal,125,N,Disease
+58,Male,Asymptomatic,120,244.0,Less than or equal to 120 mg/dl,LVH,106,Y,Disease
+65,Male,Asymptomatic,134,244.0,Less than or equal to 120 mg/dl,Normal,112,Y,Disease
+63,Male,Atypical Angina,139,244.0,More than 120 mg/dl,ST,128,Y,Disease
+55,Male,Atypical Angina,110,214.0,More than 120 mg/dl,ST,180,N,Normal
+57,Male,Asymptomatic,140,214.0,Less than or equal to 120 mg/dl,ST,144,Y,Disease
+65,Male,Typical Angina,140,252.0,Less than or equal to 120 mg/dl,Normal,135,N,Normal
+54,Male,Asymptomatic,136,220.0,Less than or equal to 120 mg/dl,Normal,140,Y,Disease
+72,Male,Non-anginal Pain,120,214.0,Less than or equal to 120 mg/dl,Normal,102,Y,Disease
+75,Male,Asymptomatic,170,203.0,More than 120 mg/dl,ST,108,N,Disease
+49,Male,Typical Angina,130,244.0,Less than or equal to 120 mg/dl,ST,145,N,Disease
+51,Male,Non-anginal Pain,137,339.0,Less than or equal to 120 mg/dl,Normal,127,Y,Disease
+60,Male,Asymptomatic,142,216.0,Less than or equal to 120 mg/dl,Normal,110,Y,Disease
+64,Female,Asymptomatic,142,276.0,Less than or equal to 120 mg/dl,Normal,140,Y,Disease
+58,Male,Asymptomatic,132,458.0,More than 120 mg/dl,Normal,69,N,Normal
+61,Male,Asymptomatic,146,241.0,Less than or equal to 120 mg/dl,Normal,148,Y,Disease
+67,Male,Asymptomatic,160,384.0,More than 120 mg/dl,ST,130,Y,Disease
+62,Male,Asymptomatic,135,297.0,Less than or equal to 120 mg/dl,Normal,130,Y,Disease
+65,Male,Asymptomatic,136,248.0,Less than or equal to 120 mg/dl,Normal,140,Y,Disease
+63,Male,Asymptomatic,130,308.0,Less than or equal to 120 mg/dl,Normal,138,Y,Disease
+69,Male,Asymptomatic,140,208.0,Less than or equal to 120 mg/dl,ST,140,Y,Disease
+51,Male,Asymptomatic,132,227.0,More than 120 mg/dl,ST,138,N,Normal
+62,Male,Asymptomatic,158,210.0,More than 120 mg/dl,Normal,112,Y,Disease
+55,Male,Non-anginal Pain,136,245.0,More than 120 mg/dl,ST,131,Y,Disease
+75,Male,Asymptomatic,136,225.0,Less than or equal to 120 mg/dl,Normal,112,Y,Disease
+40,Male,Non-anginal Pain,106,240.0,Less than or equal to 120 mg/dl,Normal,80,Y,Normal
+67,Male,Asymptomatic,120,244.0,More than 120 mg/dl,Normal,150,N,Disease
+58,Male,Asymptomatic,110,198.0,Less than or equal to 120 mg/dl,Normal,110,N,Disease
+60,Male,Asymptomatic,136,195.0,Less than or equal to 120 mg/dl,Normal,126,N,Normal
+63,Male,Asymptomatic,160,267.0,More than 120 mg/dl,ST,88,Y,Disease
+35,Male,Non-anginal Pain,123,161.0,Less than or equal to 120 mg/dl,ST,153,N,Normal
+62,Male,Typical Angina,112,258.0,Less than or equal to 120 mg/dl,ST,150,Y,Disease
+43,Male,Asymptomatic,122,244.0,Less than or equal to 120 mg/dl,Normal,120,N,Disease
+63,Male,Non-anginal Pain,130,244.0,More than 120 mg/dl,ST,160,N,Normal
+68,Male,Non-anginal Pain,150,195.0,More than 120 mg/dl,Normal,132,N,Disease
+65,Male,Asymptomatic,150,235.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+48,Male,Non-anginal Pain,102,244.0,More than 120 mg/dl,ST,110,Y,Disease
+63,Male,Asymptomatic,96,305.0,Less than or equal to 120 mg/dl,ST,121,Y,Disease
+64,Male,Asymptomatic,130,223.0,Less than or equal to 120 mg/dl,ST,128,N,Normal
+61,Male,Asymptomatic,120,282.0,Less than or equal to 120 mg/dl,ST,135,Y,Disease
+50,Male,Asymptomatic,144,349.0,Less than or equal to 120 mg/dl,LVH,120,Y,Disease
+59,Male,Asymptomatic,124,160.0,Less than or equal to 120 mg/dl,Normal,117,Y,Disease
+55,Male,Asymptomatic,150,160.0,Less than or equal to 120 mg/dl,ST,150,N,Normal
+45,Male,Non-anginal Pain,130,236.0,Less than or equal to 120 mg/dl,Normal,144,N,Normal
+65,Male,Asymptomatic,144,244.0,Less than or equal to 120 mg/dl,LVH,113,Y,Disease
+61,Male,Atypical Angina,139,283.0,Less than or equal to 120 mg/dl,Normal,135,N,Normal
+49,Male,Non-anginal Pain,131,142.0,Less than or equal to 120 mg/dl,Normal,127,Y,Disease
+72,Male,Asymptomatic,143,244.0,Less than or equal to 120 mg/dl,Normal,109,Y,Disease
+50,Male,Asymptomatic,133,244.0,Less than or equal to 120 mg/dl,Normal,128,Y,Disease
+64,Male,Asymptomatic,143,244.0,More than 120 mg/dl,ST,115,Y,Disease
+55,Male,Asymptomatic,116,244.0,More than 120 mg/dl,ST,102,N,Disease
+63,Male,Asymptomatic,110,252.0,Less than or equal to 120 mg/dl,ST,140,Y,Disease
+59,Male,Asymptomatic,125,222.0,Less than or equal to 120 mg/dl,Normal,135,Y,Disease
+56,Male,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,LVH,122,Y,Disease
+62,Male,Non-anginal Pain,133,244.0,More than 120 mg/dl,ST,119,Y,Disease
+74,Male,Asymptomatic,150,258.0,More than 120 mg/dl,ST,130,Y,Disease
+54,Male,Asymptomatic,130,202.0,More than 120 mg/dl,Normal,112,Y,Disease
+57,Male,Asymptomatic,110,197.0,Less than or equal to 120 mg/dl,LVH,100,N,Normal
+62,Male,Non-anginal Pain,138,204.0,Less than or equal to 120 mg/dl,ST,122,Y,Disease
+76,Male,Non-anginal Pain,104,113.0,Less than or equal to 120 mg/dl,LVH,120,N,Disease
+54,Female,Asymptomatic,138,274.0,Less than or equal to 120 mg/dl,Normal,105,Y,Disease
+70,Male,Asymptomatic,170,192.0,Less than or equal to 120 mg/dl,ST,129,Y,Disease
+61,Female,Atypical Angina,140,244.0,More than 120 mg/dl,Normal,120,Y,Normal
+48,Male,Asymptomatic,132,272.0,Less than or equal to 120 mg/dl,ST,139,N,Normal
+48,Male,Non-anginal Pain,132,220.0,More than 120 mg/dl,ST,162,N,Disease
+61,Male,Typical Angina,142,200.0,More than 120 mg/dl,ST,100,N,Disease
+66,Male,Asymptomatic,112,261.0,Less than or equal to 120 mg/dl,Normal,140,N,Disease
+68,Male,Typical Angina,139,181.0,More than 120 mg/dl,ST,135,N,Normal
+55,Male,Asymptomatic,172,260.0,Less than or equal to 120 mg/dl,Normal,73,N,Disease
+62,Male,Non-anginal Pain,120,244.0,Less than or equal to 120 mg/dl,LVH,86,N,Normal
+71,Male,Non-anginal Pain,144,221.0,Less than or equal to 120 mg/dl,Normal,108,Y,Disease
+74,Male,Typical Angina,145,216.0,More than 120 mg/dl,Normal,116,Y,Disease
+53,Male,Non-anginal Pain,155,175.0,More than 120 mg/dl,ST,160,N,Normal
+58,Male,Non-anginal Pain,150,219.0,Less than or equal to 120 mg/dl,ST,118,Y,Disease
+75,Male,Asymptomatic,160,310.0,More than 120 mg/dl,Normal,112,Y,Normal
+56,Male,Non-anginal Pain,137,208.0,More than 120 mg/dl,ST,122,Y,Disease
+58,Male,Non-anginal Pain,137,232.0,Less than or equal to 120 mg/dl,ST,124,Y,Disease
+64,Male,Asymptomatic,134,244.0,Less than or equal to 120 mg/dl,Normal,102,Y,Disease
+54,Male,Non-anginal Pain,133,203.0,Less than or equal to 120 mg/dl,ST,137,N,Normal
+54,Male,Atypical Angina,132,182.0,Less than or equal to 120 mg/dl,ST,141,N,Normal
+59,Male,Asymptomatic,140,274.0,Less than or equal to 120 mg/dl,Normal,154,Y,Normal
+55,Male,Asymptomatic,135,204.0,More than 120 mg/dl,ST,126,Y,Disease
+57,Male,Asymptomatic,144,244.0,More than 120 mg/dl,ST,160,Y,Disease
+61,Male,Asymptomatic,141,292.0,Less than or equal to 120 mg/dl,ST,115,Y,Disease
+41,Male,Asymptomatic,150,171.0,Less than or equal to 120 mg/dl,Normal,128,Y,Normal
+71,Male,Asymptomatic,130,221.0,Less than or equal to 120 mg/dl,ST,115,Y,Disease
+38,Male,Asymptomatic,110,289.0,Less than or equal to 120 mg/dl,Normal,105,Y,Disease
+55,Male,Asymptomatic,158,217.0,Less than or equal to 120 mg/dl,Normal,110,Y,Disease
+56,Male,Asymptomatic,128,223.0,Less than or equal to 120 mg/dl,ST,119,Y,Disease
+69,Male,Asymptomatic,140,110.0,More than 120 mg/dl,Normal,109,Y,Disease
+64,Male,Asymptomatic,150,193.0,Less than or equal to 120 mg/dl,ST,135,Y,Disease
+72,Male,Asymptomatic,160,123.0,More than 120 mg/dl,LVH,130,N,Disease
+69,Male,Asymptomatic,142,210.0,More than 120 mg/dl,ST,112,Y,Disease
+56,Male,Asymptomatic,137,282.0,More than 120 mg/dl,Normal,126,Y,Disease
+62,Male,Asymptomatic,139,170.0,Less than or equal to 120 mg/dl,ST,120,Y,Disease
+67,Male,Asymptomatic,146,369.0,Less than or equal to 120 mg/dl,Normal,110,Y,Disease
+57,Male,Asymptomatic,156,173.0,Less than or equal to 120 mg/dl,LVH,119,Y,Disease
+69,Male,Asymptomatic,145,289.0,More than 120 mg/dl,ST,110,Y,Disease
+51,Male,Asymptomatic,131,152.0,More than 120 mg/dl,LVH,130,Y,Disease
+48,Male,Asymptomatic,140,208.0,Less than or equal to 120 mg/dl,Normal,159,Y,Disease
+69,Male,Asymptomatic,122,216.0,More than 120 mg/dl,LVH,84,Y,Disease
+69,Male,Non-anginal Pain,142,271.0,Less than or equal to 120 mg/dl,LVH,126,N,Normal
+64,Male,Asymptomatic,141,244.0,More than 120 mg/dl,ST,116,Y,Disease
+57,Male,Atypical Angina,180,285.0,More than 120 mg/dl,ST,120,N,Disease
+53,Male,Asymptomatic,124,243.0,Less than or equal to 120 mg/dl,Normal,122,Y,Disease
+37,Male,Non-anginal Pain,118,240.0,Less than or equal to 120 mg/dl,LVH,165,N,Normal
+67,Male,Asymptomatic,140,219.0,Less than or equal to 120 mg/dl,ST,122,Y,Disease
+74,Male,Non-anginal Pain,140,237.0,More than 120 mg/dl,Normal,94,N,Disease
+63,Male,Atypical Angina,136,165.0,Less than or equal to 120 mg/dl,ST,133,N,Normal
+58,Male,Asymptomatic,100,213.0,Less than or equal to 120 mg/dl,ST,110,N,Normal
+61,Male,Asymptomatic,190,287.0,More than 120 mg/dl,LVH,150,Y,Disease
+64,Male,Asymptomatic,130,244.0,More than 120 mg/dl,LVH,130,N,Disease
+58,Male,Asymptomatic,160,256.0,More than 120 mg/dl,LVH,113,Y,Disease
+60,Male,Asymptomatic,130,186.0,More than 120 mg/dl,LVH,140,Y,Disease
+57,Male,Asymptomatic,122,264.0,Less than or equal to 120 mg/dl,LVH,100,N,Disease
+55,Male,Non-anginal Pain,133,185.0,Less than or equal to 120 mg/dl,ST,136,N,Normal
+55,Male,Asymptomatic,120,226.0,Less than or equal to 120 mg/dl,LVH,127,Y,Disease
+56,Male,Asymptomatic,130,203.0,More than 120 mg/dl,Normal,98,N,Disease
+57,Male,Asymptomatic,130,207.0,Less than or equal to 120 mg/dl,ST,96,Y,Normal
+61,Male,Non-anginal Pain,140,284.0,Less than or equal to 120 mg/dl,Normal,123,Y,Disease
+61,Male,Non-anginal Pain,120,244.0,Less than or equal to 120 mg/dl,Normal,98,Y,Disease
+74,Male,Asymptomatic,155,310.0,Less than or equal to 120 mg/dl,Normal,112,Y,Disease
+68,Male,Non-anginal Pain,134,254.0,More than 120 mg/dl,Normal,151,Y,Normal
+51,Female,Asymptomatic,114,258.0,More than 120 mg/dl,LVH,96,N,Normal
+62,Male,Asymptomatic,160,254.0,More than 120 mg/dl,ST,108,Y,Disease
+53,Male,Asymptomatic,144,300.0,More than 120 mg/dl,ST,128,Y,Disease
+62,Male,Asymptomatic,158,170.0,Less than or equal to 120 mg/dl,ST,138,Y,Disease
+46,Male,Asymptomatic,134,310.0,Less than or equal to 120 mg/dl,Normal,126,N,Disease
+54,Female,Asymptomatic,127,333.0,More than 120 mg/dl,ST,154,N,Disease
+62,Male,Typical Angina,135,244.0,Less than or equal to 120 mg/dl,ST,137,N,Normal
+55,Male,Asymptomatic,122,223.0,More than 120 mg/dl,ST,100,N,Disease
+58,Male,Asymptomatic,140,385.0,More than 120 mg/dl,LVH,135,N,Normal
+62,Male,Atypical Angina,120,254.0,Less than or equal to 120 mg/dl,LVH,93,Y,Disease
+70,Male,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,LVH,109,N,Disease
+67,Female,Non-anginal Pain,115,564.0,Less than or equal to 120 mg/dl,LVH,160,N,Normal
+57,Male,Atypical Angina,124,261.0,Less than or equal to 120 mg/dl,Normal,141,N,Disease
+64,Male,Asymptomatic,128,263.0,Less than or equal to 120 mg/dl,Normal,105,Y,Normal
+74,Female,Atypical Angina,120,244.0,Less than or equal to 120 mg/dl,LVH,121,Y,Normal
+65,Male,Asymptomatic,120,177.0,Less than or equal to 120 mg/dl,Normal,140,N,Normal
+56,Male,Non-anginal Pain,130,256.0,More than 120 mg/dl,LVH,142,Y,Disease
+59,Male,Asymptomatic,110,239.0,Less than or equal to 120 mg/dl,LVH,142,Y,Disease
+60,Male,Asymptomatic,140,293.0,Less than or equal to 120 mg/dl,LVH,170,N,Disease
+63,Female,Asymptomatic,150,407.0,Less than or equal to 120 mg/dl,LVH,154,N,Disease
+59,Male,Asymptomatic,135,234.0,Less than or equal to 120 mg/dl,Normal,161,N,Normal
+53,Male,Asymptomatic,142,226.0,Less than or equal to 120 mg/dl,LVH,111,Y,Normal
+44,Male,Non-anginal Pain,140,235.0,Less than or equal to 120 mg/dl,LVH,180,N,Normal
+61,Male,Typical Angina,134,234.0,Less than or equal to 120 mg/dl,Normal,145,N,Disease
+57,Female,Asymptomatic,128,303.0,Less than or equal to 120 mg/dl,LVH,159,N,Normal
+71,Female,Asymptomatic,112,149.0,Less than or equal to 120 mg/dl,Normal,125,N,Normal
+46,Male,Asymptomatic,140,311.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+53,Male,Asymptomatic,140,203.0,More than 120 mg/dl,LVH,155,Y,Disease
+64,Male,Typical Angina,110,211.0,Less than or equal to 120 mg/dl,LVH,144,Y,Normal
+40,Male,Typical Angina,140,199.0,Less than or equal to 120 mg/dl,Normal,178,Y,Normal
+67,Male,Asymptomatic,120,229.0,Less than or equal to 120 mg/dl,LVH,129,Y,Disease
+48,Male,Atypical Angina,130,245.0,Less than or equal to 120 mg/dl,LVH,180,N,Normal
+43,Male,Asymptomatic,115,303.0,Less than or equal to 120 mg/dl,Normal,181,N,Normal
+47,Male,Asymptomatic,112,244.0,Less than or equal to 120 mg/dl,Normal,143,N,Normal
+54,Female,Atypical Angina,132,288.0,More than 120 mg/dl,LVH,159,Y,Normal
+48,Female,Non-anginal Pain,130,275.0,Less than or equal to 120 mg/dl,Normal,139,N,Normal
+46,Female,Asymptomatic,138,243.0,Less than or equal to 120 mg/dl,LVH,152,Y,Normal
+51,Female,Non-anginal Pain,120,295.0,Less than or equal to 120 mg/dl,LVH,157,N,Normal
+58,Male,Non-anginal Pain,112,230.0,Less than or equal to 120 mg/dl,LVH,165,N,Disease
+71,Female,Non-anginal Pain,110,265.0,More than 120 mg/dl,LVH,130,N,Normal
+57,Male,Non-anginal Pain,128,244.0,Less than or equal to 120 mg/dl,LVH,150,N,Disease
+66,Male,Asymptomatic,160,228.0,Less than or equal to 120 mg/dl,LVH,138,N,Normal
+37,Female,Non-anginal Pain,120,215.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+59,Male,Asymptomatic,170,326.0,Less than or equal to 120 mg/dl,LVH,140,Y,Disease
+50,Male,Asymptomatic,144,200.0,Less than or equal to 120 mg/dl,LVH,126,Y,Disease
+48,Male,Asymptomatic,130,256.0,More than 120 mg/dl,LVH,150,Y,Disease
+61,Male,Asymptomatic,140,207.0,Less than or equal to 120 mg/dl,LVH,138,Y,Disease
+59,Male,Typical Angina,160,273.0,Less than or equal to 120 mg/dl,LVH,125,N,Disease
+42,Male,Non-anginal Pain,130,180.0,Less than or equal to 120 mg/dl,Normal,150,N,Normal
+48,Male,Asymptomatic,122,222.0,Less than or equal to 120 mg/dl,LVH,186,N,Normal
+40,Male,Asymptomatic,152,223.0,Less than or equal to 120 mg/dl,Normal,181,N,Disease
+62,Female,Asymptomatic,124,209.0,Less than or equal to 120 mg/dl,Normal,163,N,Normal
+44,Male,Non-anginal Pain,130,233.0,Less than or equal to 120 mg/dl,Normal,179,Y,Normal
+46,Male,Atypical Angina,101,197.0,More than 120 mg/dl,Normal,156,N,Normal
+59,Male,Non-anginal Pain,126,218.0,More than 120 mg/dl,Normal,134,N,Disease
+58,Male,Non-anginal Pain,140,211.0,More than 120 mg/dl,LVH,165,N,Normal
+49,Male,Non-anginal Pain,118,149.0,Less than or equal to 120 mg/dl,LVH,126,N,Disease
+44,Male,Asymptomatic,110,197.0,Less than or equal to 120 mg/dl,LVH,177,N,Disease
+66,Male,Atypical Angina,160,246.0,Less than or equal to 120 mg/dl,Normal,120,Y,Disease
+65,Female,Asymptomatic,150,225.0,Less than or equal to 120 mg/dl,LVH,114,N,Disease
+42,Male,Asymptomatic,136,315.0,Less than or equal to 120 mg/dl,Normal,125,Y,Disease
+52,Male,Atypical Angina,128,205.0,More than 120 mg/dl,Normal,184,N,Normal
+65,Female,Non-anginal Pain,140,417.0,More than 120 mg/dl,LVH,157,N,Normal
+63,Female,Atypical Angina,140,195.0,Less than or equal to 120 mg/dl,Normal,179,N,Normal
+45,Female,Atypical Angina,130,234.0,Less than or equal to 120 mg/dl,LVH,175,N,Normal
+41,Female,Atypical Angina,105,198.0,Less than or equal to 120 mg/dl,Normal,168,N,Normal
+61,Male,Asymptomatic,138,166.0,Less than or equal to 120 mg/dl,LVH,125,Y,Disease
+60,Female,Non-anginal Pain,120,178.0,More than 120 mg/dl,Normal,96,N,Normal
+59,Female,Asymptomatic,174,249.0,Less than or equal to 120 mg/dl,Normal,143,Y,Disease
+62,Male,Atypical Angina,120,281.0,Less than or equal to 120 mg/dl,LVH,103,N,Disease
+57,Male,Non-anginal Pain,150,126.0,More than 120 mg/dl,Normal,173,N,Normal
+51,Female,Asymptomatic,130,244.0,Less than or equal to 120 mg/dl,Normal,142,Y,Disease
+44,Male,Non-anginal Pain,120,226.0,Less than or equal to 120 mg/dl,Normal,169,N,Normal
+60,Female,Typical Angina,150,240.0,Less than or equal to 120 mg/dl,Normal,171,N,Normal
+63,Male,Typical Angina,145,233.0,More than 120 mg/dl,LVH,150,N,Normal
+57,Male,Asymptomatic,150,244.0,Less than or equal to 120 mg/dl,LVH,112,Y,Disease
+51,Male,Asymptomatic,140,261.0,Less than or equal to 120 mg/dl,LVH,186,Y,Normal
+58,Female,Atypical Angina,136,319.0,More than 120 mg/dl,LVH,152,N,Disease
+44,Female,Non-anginal Pain,118,242.0,Less than or equal to 120 mg/dl,Normal,149,N,Normal
+47,Male,Non-anginal Pain,108,243.0,Less than or equal to 120 mg/dl,Normal,152,N,Disease
+61,Male,Asymptomatic,120,260.0,Less than or equal to 120 mg/dl,Normal,140,Y,Disease
+57,Female,Asymptomatic,120,354.0,Less than or equal to 120 mg/dl,Normal,163,Y,Normal
+70,Male,Atypical Angina,156,245.0,Less than or equal to 120 mg/dl,LVH,143,N,Normal
+76,Female,Non-anginal Pain,140,197.0,Less than or equal to 120 mg/dl,ST,116,N,Normal
+67,Female,Asymptomatic,106,223.0,Less than or equal to 120 mg/dl,Normal,142,N,Normal
+45,Male,Asymptomatic,142,309.0,Less than or equal to 120 mg/dl,LVH,147,Y,Disease
+45,Male,Asymptomatic,104,208.0,Less than or equal to 120 mg/dl,LVH,148,Y,Normal
+39,Female,Non-anginal Pain,94,199.0,Less than or equal to 120 mg/dl,Normal,179,N,Normal
+42,Female,Non-anginal Pain,120,209.0,Less than or equal to 120 mg/dl,Normal,173,N,Normal
+56,Male,Atypical Angina,120,236.0,Less than or equal to 120 mg/dl,Normal,178,N,Normal
+58,Male,Asymptomatic,146,218.0,Less than or equal to 120 mg/dl,Normal,105,N,Disease
+35,Male,Asymptomatic,120,198.0,Less than or equal to 120 mg/dl,Normal,130,Y,Disease
+58,Male,Asymptomatic,150,270.0,Less than or equal to 120 mg/dl,LVH,111,Y,Disease
+41,Male,Non-anginal Pain,130,244.0,Less than or equal to 120 mg/dl,LVH,168,N,Normal
+57,Male,Asymptomatic,110,201.0,Less than or equal to 120 mg/dl,Normal,126,Y,Normal
+42,Male,Typical Angina,148,244.0,Less than or equal to 120 mg/dl,LVH,178,N,Normal
+62,Male,Atypical Angina,128,244.0,More than 120 mg/dl,LVH,140,N,Normal
+59,Male,Typical Angina,178,270.0,Less than or equal to 120 mg/dl,LVH,145,N,Normal
+41,Female,Atypical Angina,126,306.0,Less than or equal to 120 mg/dl,Normal,163,N,Normal
+50,Male,Asymptomatic,150,243.0,Less than or equal to 120 mg/dl,LVH,128,N,Disease
+59,Male,Atypical Angina,140,244.0,Less than or equal to 120 mg/dl,Normal,164,Y,Normal
+61,Female,Asymptomatic,130,330.0,Less than or equal to 120 mg/dl,LVH,169,N,Disease
+54,Male,Asymptomatic,124,266.0,Less than or equal to 120 mg/dl,LVH,109,Y,Disease
+54,Male,Asymptomatic,110,206.0,Less than or equal to 120 mg/dl,LVH,108,Y,Disease
+52,Male,Asymptomatic,125,212.0,Less than or equal to 120 mg/dl,Normal,168,N,Disease
+47,Male,Asymptomatic,110,275.0,Less than or equal to 120 mg/dl,LVH,118,Y,Disease
+66,Male,Asymptomatic,120,302.0,Less than or equal to 120 mg/dl,LVH,151,N,Normal
+58,Male,Asymptomatic,100,234.0,Less than or equal to 120 mg/dl,Normal,156,N,Disease
+64,Female,Non-anginal Pain,140,313.0,Less than or equal to 120 mg/dl,Normal,133,N,Normal
+50,Female,Atypical Angina,120,244.0,Less than or equal to 120 mg/dl,Normal,162,N,Normal
+44,Female,Non-anginal Pain,108,141.0,Less than or equal to 120 mg/dl,Normal,175,N,Normal
+67,Male,Asymptomatic,120,237.0,Less than or equal to 120 mg/dl,Normal,71,N,Disease
+49,Female,Asymptomatic,130,269.0,Less than or equal to 120 mg/dl,Normal,163,N,Normal
+57,Male,Asymptomatic,165,289.0,More than 120 mg/dl,LVH,124,N,Disease
+63,Male,Asymptomatic,130,254.0,Less than or equal to 120 mg/dl,LVH,147,N,Disease
+48,Male,Asymptomatic,124,274.0,Less than or equal to 120 mg/dl,LVH,166,N,Disease
+51,Male,Non-anginal Pain,100,222.0,Less than or equal to 120 mg/dl,Normal,143,Y,Normal
+60,Female,Asymptomatic,150,258.0,Less than or equal to 120 mg/dl,LVH,157,N,Disease
+59,Male,Asymptomatic,140,177.0,Less than or equal to 120 mg/dl,Normal,162,Y,Disease
+45,Female,Atypical Angina,112,244.0,Less than or equal to 120 mg/dl,Normal,138,N,Normal
+55,Female,Asymptomatic,180,327.0,Less than or equal to 120 mg/dl,ST,117,Y,Disease
+41,Male,Atypical Angina,110,235.0,Less than or equal to 120 mg/dl,Normal,153,N,Normal
+60,Female,Asymptomatic,158,305.0,Less than or equal to 120 mg/dl,LVH,161,N,Disease
+54,Female,Non-anginal Pain,135,304.0,More than 120 mg/dl,Normal,170,N,Normal
+42,Male,Atypical Angina,120,295.0,Less than or equal to 120 mg/dl,Normal,162,N,Normal
+49,Female,Atypical Angina,134,271.0,Less than or equal to 120 mg/dl,Normal,162,N,Normal
+46,Male,Asymptomatic,120,249.0,Less than or equal to 120 mg/dl,LVH,144,N,Disease
+56,Female,Asymptomatic,200,288.0,More than 120 mg/dl,LVH,133,Y,Disease
+66,Female,Typical Angina,150,226.0,Less than or equal to 120 mg/dl,Normal,114,N,Normal
+56,Male,Asymptomatic,130,283.0,More than 120 mg/dl,LVH,103,Y,Disease
+49,Male,Non-anginal Pain,120,188.0,Less than or equal to 120 mg/dl,Normal,139,N,Disease
+54,Male,Asymptomatic,122,286.0,Less than or equal to 120 mg/dl,LVH,116,Y,Disease
+57,Male,Asymptomatic,152,274.0,Less than or equal to 120 mg/dl,Normal,88,Y,Disease
+65,Female,Non-anginal Pain,160,360.0,Less than or equal to 120 mg/dl,LVH,151,N,Normal
+54,Male,Non-anginal Pain,125,273.0,Less than or equal to 120 mg/dl,LVH,152,N,Normal
+54,Female,Non-anginal Pain,160,201.0,Less than or equal to 120 mg/dl,Normal,163,N,Normal
+62,Male,Asymptomatic,120,267.0,Less than or equal to 120 mg/dl,Normal,99,Y,Disease
+52,Female,Non-anginal Pain,136,196.0,Less than or equal to 120 mg/dl,LVH,169,N,Normal
+52,Male,Atypical Angina,134,201.0,Less than or equal to 120 mg/dl,Normal,158,N,Normal
+60,Male,Asymptomatic,117,230.0,More than 120 mg/dl,Normal,160,Y,Disease
+63,Female,Asymptomatic,108,269.0,Less than or equal to 120 mg/dl,Normal,169,Y,Disease
+66,Male,Asymptomatic,112,212.0,Less than or equal to 120 mg/dl,LVH,132,Y,Disease
+42,Male,Asymptomatic,140,226.0,Less than or equal to 120 mg/dl,Normal,178,N,Normal
+64,Male,Asymptomatic,120,246.0,Less than or equal to 120 mg/dl,LVH,96,Y,Disease
+54,Male,Non-anginal Pain,150,232.0,Less than or equal to 120 mg/dl,LVH,165,N,Normal
+46,Female,Non-anginal Pain,142,177.0,Less than or equal to 120 mg/dl,LVH,160,Y,Normal
+67,Female,Non-anginal Pain,152,244.0,Less than or equal to 120 mg/dl,Normal,172,N,Normal
+56,Male,Asymptomatic,125,249.0,More than 120 mg/dl,LVH,144,Y,Disease
+34,Female,Atypical Angina,118,210.0,Less than or equal to 120 mg/dl,Normal,192,N,Normal
+57,Male,Asymptomatic,132,207.0,Less than or equal to 120 mg/dl,Normal,168,Y,Normal
+64,Male,Asymptomatic,145,244.0,Less than or equal to 120 mg/dl,LVH,132,N,Disease
+59,Male,Asymptomatic,138,271.0,Less than or equal to 120 mg/dl,LVH,182,N,Normal
+50,Male,Non-anginal Pain,140,233.0,Less than or equal to 120 mg/dl,Normal,163,N,Disease
+51,Male,Typical Angina,125,213.0,Less than or equal to 120 mg/dl,LVH,125,Y,Normal
+54,Male,Atypical Angina,192,244.0,Less than or equal to 120 mg/dl,LVH,195,N,Disease
+53,Male,Asymptomatic,123,282.0,Less than or equal to 120 mg/dl,Normal,95,Y,Disease
+52,Male,Asymptomatic,112,230.0,Less than or equal to 120 mg/dl,Normal,160,N,Disease
+40,Male,Asymptomatic,110,167.0,Less than or equal to 120 mg/dl,LVH,114,Y,Disease
+58,Male,Non-anginal Pain,132,224.0,Less than or equal to 120 mg/dl,LVH,173,N,Disease
+41,Female,Non-anginal Pain,112,268.0,Less than or equal to 120 mg/dl,LVH,172,Y,Normal
+41,Male,Non-anginal Pain,112,244.0,Less than or equal to 120 mg/dl,Normal,179,N,Normal
+50,Female,Non-anginal Pain,120,219.0,Less than or equal to 120 mg/dl,Normal,158,N,Normal
+54,Female,Non-anginal Pain,108,267.0,Less than or equal to 120 mg/dl,LVH,167,N,Normal
+64,Female,Asymptomatic,130,303.0,Less than or equal to 120 mg/dl,Normal,122,N,Normal
+51,Female,Non-anginal Pain,130,256.0,Less than or equal to 120 mg/dl,LVH,149,N,Normal
+46,Female,Atypical Angina,105,204.0,Less than or equal to 120 mg/dl,Normal,172,N,Normal
+55,Male,Asymptomatic,140,217.0,Less than or equal to 120 mg/dl,Normal,111,Y,Disease
+45,Male,Atypical Angina,128,308.0,Less than or equal to 120 mg/dl,LVH,170,N,Normal
+56,Male,Typical Angina,120,193.0,Less than or equal to 120 mg/dl,LVH,162,N,Normal
+66,Female,Asymptomatic,178,228.0,More than 120 mg/dl,Normal,165,Y,Disease
+38,Male,Typical Angina,120,231.0,Less than or equal to 120 mg/dl,Normal,182,Y,Disease
+62,Female,Asymptomatic,150,244.0,Less than or equal to 120 mg/dl,Normal,154,Y,Disease
+55,Male,Atypical Angina,130,262.0,Less than or equal to 120 mg/dl,Normal,155,N,Normal
+58,Male,Asymptomatic,128,259.0,Less than or equal to 120 mg/dl,LVH,130,Y,Disease
+43,Male,Asymptomatic,110,211.0,Less than or equal to 120 mg/dl,Normal,161,N,Normal
+64,Female,Asymptomatic,180,244.0,Less than or equal to 120 mg/dl,Normal,154,Y,Normal
+50,Female,Asymptomatic,110,254.0,Less than or equal to 120 mg/dl,LVH,159,N,Normal
+53,Male,Non-anginal Pain,130,197.0,More than 120 mg/dl,LVH,152,N,Normal
+45,Female,Asymptomatic,138,236.0,Less than or equal to 120 mg/dl,LVH,152,Y,Normal
+65,Male,Typical Angina,138,282.0,More than 120 mg/dl,LVH,174,N,Disease
+69,Male,Typical Angina,160,234.0,More than 120 mg/dl,LVH,131,N,Normal
+69,Male,Non-anginal Pain,140,254.0,Less than or equal to 120 mg/dl,LVH,146,N,Disease
+67,Male,Asymptomatic,100,299.0,Less than or equal to 120 mg/dl,LVH,125,Y,Disease
+68,Female,Non-anginal Pain,120,211.0,Less than or equal to 120 mg/dl,LVH,115,N,Normal
+34,Male,Typical Angina,118,244.0,Less than or equal to 120 mg/dl,LVH,174,N,Normal
+62,Female,Asymptomatic,138,294.0,More than 120 mg/dl,Normal,106,N,Disease
+51,Male,Asymptomatic,140,244.0,Less than or equal to 120 mg/dl,Normal,122,Y,Disease
+46,Male,Non-anginal Pain,150,231.0,Less than or equal to 120 mg/dl,Normal,147,N,Disease
+67,Male,Asymptomatic,125,254.0,More than 120 mg/dl,Normal,163,N,Disease
+50,Male,Non-anginal Pain,129,196.0,Less than or equal to 120 mg/dl,Normal,163,N,Normal
+42,Male,Non-anginal Pain,120,240.0,More than 120 mg/dl,Normal,194,N,Normal
+56,Female,Asymptomatic,134,244.0,Less than or equal to 120 mg/dl,LVH,150,Y,Disease
+41,Male,Asymptomatic,110,172.0,Less than or equal to 120 mg/dl,LVH,158,N,Disease
+42,Female,Asymptomatic,102,265.0,Less than or equal to 120 mg/dl,LVH,122,N,Normal
+53,Male,Non-anginal Pain,130,246.0,More than 120 mg/dl,LVH,173,N,Normal
+43,Male,Non-anginal Pain,130,315.0,Less than or equal to 120 mg/dl,Normal,162,N,Normal
+56,Male,Asymptomatic,132,184.0,Less than or equal to 120 mg/dl,LVH,105,Y,Disease
+52,Male,Asymptomatic,108,244.0,More than 120 mg/dl,Normal,147,N,Normal
+62,Female,Asymptomatic,140,394.0,Less than or equal to 120 mg/dl,LVH,157,N,Normal
+70,Male,Non-anginal Pain,160,269.0,Less than or equal to 120 mg/dl,Normal,112,Y,Disease
+54,Male,Asymptomatic,140,239.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+70,Male,Asymptomatic,145,174.0,Less than or equal to 120 mg/dl,Normal,125,Y,Disease
+54,Male,Atypical Angina,108,309.0,Less than or equal to 120 mg/dl,Normal,156,N,Normal
+35,Male,Asymptomatic,126,282.0,Less than or equal to 120 mg/dl,LVH,156,Y,Disease
+48,Male,Non-anginal Pain,124,255.0,More than 120 mg/dl,Normal,175,N,Normal
+55,Female,Atypical Angina,135,250.0,Less than or equal to 120 mg/dl,LVH,161,N,Normal
+58,Female,Asymptomatic,100,248.0,Less than or equal to 120 mg/dl,LVH,122,N,Normal
+54,Female,Non-anginal Pain,110,214.0,Less than or equal to 120 mg/dl,Normal,158,N,Normal
+69,Female,Typical Angina,140,239.0,Less than or equal to 120 mg/dl,Normal,151,N,Normal
+77,Male,Asymptomatic,125,244.0,Less than or equal to 120 mg/dl,LVH,162,Y,Disease
+68,Male,Non-anginal Pain,118,244.0,Less than or equal to 120 mg/dl,Normal,151,N,Normal
+58,Male,Asymptomatic,125,300.0,Less than or equal to 120 mg/dl,LVH,171,N,Disease
+60,Male,Asymptomatic,125,244.0,Less than or equal to 120 mg/dl,LVH,141,Y,Disease
+51,Male,Asymptomatic,140,299.0,Less than or equal to 120 mg/dl,Normal,173,Y,Disease
+55,Male,Asymptomatic,160,289.0,Less than or equal to 120 mg/dl,LVH,145,Y,Disease
+52,Male,Typical Angina,152,244.0,More than 120 mg/dl,Normal,178,N,Normal
+60,Female,Non-anginal Pain,102,318.0,Less than or equal to 120 mg/dl,Normal,160,N,Normal
+58,Male,Non-anginal Pain,105,240.0,Less than or equal to 120 mg/dl,LVH,154,Y,Normal
+64,Male,Non-anginal Pain,125,309.0,Less than or equal to 120 mg/dl,Normal,131,Y,Disease
+37,Male,Non-anginal Pain,130,250.0,Less than or equal to 120 mg/dl,Normal,187,N,Normal
+59,Male,Typical Angina,170,288.0,Less than or equal to 120 mg/dl,LVH,159,N,Disease
+51,Male,Non-anginal Pain,125,245.0,More than 120 mg/dl,LVH,166,N,Normal
+43,Female,Non-anginal Pain,122,213.0,Less than or equal to 120 mg/dl,Normal,165,N,Normal
+58,Male,Asymptomatic,128,216.0,Less than or equal to 120 mg/dl,LVH,131,Y,Disease
+29,Male,Atypical Angina,130,244.0,Less than or equal to 120 mg/dl,LVH,202,N,Normal
+41,Female,Atypical Angina,130,204.0,Less than or equal to 120 mg/dl,LVH,172,N,Normal
+63,Female,Non-anginal Pain,135,252.0,Less than or equal to 120 mg/dl,LVH,172,N,Normal
+51,Male,Non-anginal Pain,94,227.0,Less than or equal to 120 mg/dl,Normal,154,Y,Normal
+54,Male,Non-anginal Pain,120,258.0,Less than or equal to 120 mg/dl,LVH,147,N,Normal
+44,Male,Atypical Angina,120,220.0,Less than or equal to 120 mg/dl,Normal,170,N,Normal
+54,Male,Asymptomatic,110,239.0,Less than or equal to 120 mg/dl,Normal,126,Y,Disease
+65,Male,Asymptomatic,135,254.0,Less than or equal to 120 mg/dl,LVH,127,N,Disease
+57,Male,Non-anginal Pain,150,168.0,Less than or equal to 120 mg/dl,Normal,174,N,Normal
+63,Male,Asymptomatic,130,330.0,More than 120 mg/dl,LVH,132,Y,Disease
+35,Female,Asymptomatic,138,183.0,Less than or equal to 120 mg/dl,Normal,182,N,Normal
+41,Male,Atypical Angina,135,203.0,Less than or equal to 120 mg/dl,Normal,132,N,Normal
+62,Female,Non-anginal Pain,130,263.0,Less than or equal to 120 mg/dl,Normal,97,N,Disease
+43,Female,Asymptomatic,132,341.0,More than 120 mg/dl,LVH,136,Y,Disease
+58,Female,Typical Angina,150,283.0,More than 120 mg/dl,LVH,162,N,Normal
+52,Male,Typical Angina,118,186.0,Less than or equal to 120 mg/dl,LVH,190,N,Normal
+61,Female,Asymptomatic,145,307.0,Less than or equal to 120 mg/dl,LVH,146,Y,Disease
+39,Male,Asymptomatic,118,219.0,Less than or equal to 120 mg/dl,Normal,140,N,Disease
+45,Male,Asymptomatic,115,260.0,Less than or equal to 120 mg/dl,LVH,185,N,Normal
+52,Male,Asymptomatic,128,255.0,Less than or equal to 120 mg/dl,Normal,161,Y,Disease
+62,Male,Non-anginal Pain,130,231.0,Less than or equal to 120 mg/dl,Normal,146,N,Normal
+62,Female,Asymptomatic,160,164.0,Less than or equal to 120 mg/dl,LVH,145,N,Disease
+53,Female,Asymptomatic,138,244.0,Less than or equal to 120 mg/dl,LVH,160,N,Normal
+43,Male,Asymptomatic,120,177.0,Less than or equal to 120 mg/dl,LVH,120,Y,Disease
+47,Male,Non-anginal Pain,138,257.0,Less than or equal to 120 mg/dl,LVH,156,N,Normal
+52,Male,Atypical Angina,120,325.0,Less than or equal to 120 mg/dl,Normal,172,N,Normal
+68,Male,Non-anginal Pain,180,274.0,More than 120 mg/dl,LVH,150,Y,Disease
+39,Male,Non-anginal Pain,140,321.0,Less than or equal to 120 mg/dl,LVH,182,N,Normal
+53,Female,Asymptomatic,130,264.0,Less than or equal to 120 mg/dl,LVH,143,N,Normal
+62,Female,Asymptomatic,140,268.0,Less than or equal to 120 mg/dl,LVH,160,N,Disease
+51,Female,Non-anginal Pain,140,308.0,Less than or equal to 120 mg/dl,LVH,142,N,Normal
+60,Male,Asymptomatic,130,253.0,Less than or equal to 120 mg/dl,Normal,144,Y,Disease
+65,Male,Asymptomatic,110,248.0,Less than or equal to 120 mg/dl,LVH,158,N,Disease
+65,Female,Non-anginal Pain,155,269.0,Less than or equal to 120 mg/dl,Normal,148,N,Normal
+60,Male,Non-anginal Pain,140,185.0,Less than or equal to 120 mg/dl,LVH,155,N,Disease
+60,Male,Asymptomatic,145,282.0,Less than or equal to 120 mg/dl,LVH,142,Y,Disease
+54,Male,Asymptomatic,120,188.0,Less than or equal to 120 mg/dl,Normal,113,N,Disease
+44,Male,Atypical Angina,130,219.0,Less than or equal to 120 mg/dl,LVH,188,N,Normal
+44,Male,Asymptomatic,112,290.0,Less than or equal to 120 mg/dl,LVH,153,N,Disease
+51,Male,Non-anginal Pain,110,175.0,Less than or equal to 120 mg/dl,Normal,123,N,Normal
+59,Male,Non-anginal Pain,150,212.0,More than 120 mg/dl,Normal,157,N,Normal
+71,Female,Atypical Angina,160,302.0,Less than or equal to 120 mg/dl,Normal,162,N,Normal
+61,Male,Non-anginal Pain,150,244.0,More than 120 mg/dl,Normal,137,Y,Normal
+55,Male,Asymptomatic,132,353.0,Less than or equal to 120 mg/dl,Normal,132,Y,Disease
+64,Male,Non-anginal Pain,140,335.0,Less than or equal to 120 mg/dl,Normal,158,N,Disease
+43,Male,Asymptomatic,150,247.0,Less than or equal to 120 mg/dl,Normal,171,N,Normal
+58,Female,Non-anginal Pain,120,340.0,Less than or equal to 120 mg/dl,Normal,172,N,Normal
+60,Male,Asymptomatic,130,206.0,Less than or equal to 120 mg/dl,LVH,132,Y,Disease
+58,Male,Atypical Angina,120,284.0,Less than or equal to 120 mg/dl,LVH,160,N,Disease
+49,Male,Atypical Angina,130,266.0,Less than or equal to 120 mg/dl,Normal,171,N,Normal
+48,Male,Atypical Angina,110,229.0,Less than or equal to 120 mg/dl,Normal,168,N,Disease
+52,Male,Non-anginal Pain,172,199.0,More than 120 mg/dl,Normal,162,N,Normal
+44,Male,Atypical Angina,120,263.0,Less than or equal to 120 mg/dl,Normal,173,N,Normal
+56,Female,Atypical Angina,140,294.0,Less than or equal to 120 mg/dl,LVH,153,N,Normal
+57,Male,Asymptomatic,140,192.0,Less than or equal to 120 mg/dl,Normal,148,N,Normal
+67,Male,Asymptomatic,160,286.0,Less than or equal to 120 mg/dl,LVH,108,Y,Disease
+53,Female,Non-anginal Pain,128,216.0,Less than or equal to 120 mg/dl,LVH,115,N,Normal
+52,Male,Non-anginal Pain,138,223.0,Less than or equal to 120 mg/dl,Normal,169,N,Normal
+43,Male,Asymptomatic,132,247.0,More than 120 mg/dl,LVH,143,Y,Disease
+52,Male,Asymptomatic,128,204.0,More than 120 mg/dl,Normal,156,Y,Disease
+59,Male,Typical Angina,134,204.0,Less than or equal to 120 mg/dl,Normal,162,N,Disease
+64,Male,Typical Angina,170,227.0,Less than or equal to 120 mg/dl,LVH,155,N,Normal
+66,Female,Non-anginal Pain,146,278.0,Less than or equal to 120 mg/dl,LVH,152,N,Normal
+39,Female,Non-anginal Pain,138,220.0,Less than or equal to 120 mg/dl,Normal,152,N,Normal
+57,Male,Atypical Angina,154,232.0,Less than or equal to 120 mg/dl,LVH,164,N,Disease
+58,Female,Asymptomatic,130,197.0,Less than or equal to 120 mg/dl,Normal,131,N,Normal
+57,Male,Asymptomatic,110,335.0,Less than or equal to 120 mg/dl,Normal,143,Y,Disease
+47,Male,Non-anginal Pain,130,253.0,Less than or equal to 120 mg/dl,Normal,179,N,Normal
+55,Female,Asymptomatic,128,205.0,Less than or equal to 120 mg/dl,ST,130,Y,Disease
+35,Male,Atypical Angina,122,192.0,Less than or equal to 120 mg/dl,Normal,174,N,Normal
+61,Male,Asymptomatic,148,203.0,Less than or equal to 120 mg/dl,Normal,161,N,Disease
+58,Male,Asymptomatic,114,318.0,Less than or equal to 120 mg/dl,ST,140,N,Disease
+58,Female,Asymptomatic,170,225.0,More than 120 mg/dl,LVH,146,Y,Disease
+58,Male,Atypical Angina,125,220.0,Less than or equal to 120 mg/dl,Normal,144,N,Normal
+56,Male,Atypical Angina,130,221.0,Less than or equal to 120 mg/dl,LVH,163,N,Normal
+56,Male,Atypical Angina,120,240.0,Less than or equal to 120 mg/dl,Normal,169,N,Normal
+67,Male,Non-anginal Pain,152,212.0,Less than or equal to 120 mg/dl,LVH,150,N,Disease
+55,Female,Atypical Angina,132,342.0,Less than or equal to 120 mg/dl,Normal,166,N,Normal
+44,Male,Asymptomatic,120,169.0,Less than or equal to 120 mg/dl,Normal,144,Y,Disease
+63,Male,Asymptomatic,140,187.0,Less than or equal to 120 mg/dl,LVH,144,Y,Disease
+63,Female,Asymptomatic,124,197.0,Less than or equal to 120 mg/dl,Normal,136,Y,Disease
+41,Male,Atypical Angina,120,157.0,Less than or equal to 120 mg/dl,Normal,182,N,Normal
+59,Male,Asymptomatic,164,176.0,More than 120 mg/dl,LVH,90,N,Disease
+57,Female,Asymptomatic,140,241.0,Less than or equal to 120 mg/dl,Normal,123,Y,Disease
+45,Male,Typical Angina,110,244.0,Less than or equal to 120 mg/dl,Normal,132,N,Disease
+68,Male,Asymptomatic,144,193.0,More than 120 mg/dl,Normal,141,N,Disease
+57,Male,Asymptomatic,130,131.0,Less than or equal to 120 mg/dl,Normal,115,Y,Disease
+57,Female,Atypical Angina,130,236.0,Less than or equal to 120 mg/dl,LVH,174,N,Disease
+38,Male,Non-anginal Pain,138,175.0,Less than or equal to 120 mg/dl,Normal,173,N,Normal
